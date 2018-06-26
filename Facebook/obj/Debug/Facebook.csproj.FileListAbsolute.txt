@@ -1,0 +1,14 @@
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\bin\Debug\Facebook.exe.config
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.exe
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.pdb
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\bin\Debug\Facebook.exe
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\bin\Debug\Facebook.pdb
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Form1.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Homepage.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Properties.Resources.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Resources.UserControl2.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.UserControl1.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.csproj.GenerateResource.Cache
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.UserControls.chat.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.profilepage.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Write_post.resources
