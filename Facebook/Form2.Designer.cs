@@ -54,18 +54,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.write_post_in_profil1 = new Facebook.Write_post_in_profil();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cover_profile_photo1 = new Facebook.cover_profile_photo();
+            this.chat2 = new Facebook.UserControls.chat();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.chat1 = new Facebook.UserControls.chat();
-            this.chat2 = new Facebook.UserControls.chat();
-            this.write_post_in_profil1 = new Facebook.Write_post_in_profil();
-            this.cover_profile_photo1 = new Facebook.cover_profile_photo();
             this.panel2.SuspendLayout();
             this.profilepicpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Profilpic)).BeginInit();
@@ -76,8 +76,8 @@
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -412,10 +412,11 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.878151F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.12185F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.chat2, 2, 0);
             this.bunifuTransition1.SetDecoration(this.tableLayoutPanel2, BunifuAnimatorNS.DecorationType.None);
@@ -440,8 +441,116 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 229F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(692, 541);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(690, 541);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.AutoSize = true;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 517F));
+            this.tableLayoutPanel5.Controls.Add(this.write_post_in_profil1, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox1, 0, 0);
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 232);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(684, 306);
+            this.tableLayoutPanel5.TabIndex = 1;
+            // 
+            // write_post_in_profil1
+            // 
+            this.write_post_in_profil1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.write_post_in_profil1, BunifuAnimatorNS.DecorationType.None);
+            this.write_post_in_profil1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.write_post_in_profil1.Location = new System.Drawing.Point(174, 3);
+            this.write_post_in_profil1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.write_post_in_profil1.Name = "write_post_in_profil1";
+            this.write_post_in_profil1.Size = new System.Drawing.Size(509, 144);
+            this.write_post_in_profil1.TabIndex = 16;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.bunifuTransition1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(153)))));
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(164, 300);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Bio";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.label8.Location = new System.Drawing.Point(5, 83);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 15);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Support : ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Location = new System.Drawing.Point(5, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 15);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Social status : ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Location = new System.Drawing.Point(6, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Faculity : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Location = new System.Drawing.Point(6, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 15);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Study : ";
+            // 
+            // cover_profile_photo1
+            // 
+            this.cover_profile_photo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.bunifuTransition1.SetDecoration(this.cover_profile_photo1, BunifuAnimatorNS.DecorationType.None);
+            this.cover_profile_photo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cover_profile_photo1.Location = new System.Drawing.Point(3, 3);
+            this.cover_profile_photo1.Name = "cover_profile_photo1";
+            this.cover_profile_photo1.Size = new System.Drawing.Size(684, 223);
+            this.cover_profile_photo1.TabIndex = 15;
+            // 
+            // chat2
+            // 
+            this.chat2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.chat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.bunifuTransition1.SetDecoration(this.chat2, BunifuAnimatorNS.DecorationType.None);
+            this.chat2.Location = new System.Drawing.Point(770, 158);
+            this.chat2.Name = "chat2";
+            this.chat2.Size = new System.Drawing.Size(181, 386);
+            this.chat2.TabIndex = 1;
             // 
             // bunifuElipse1
             // 
@@ -469,83 +578,6 @@
             animation1.TransparencyCoeff = 0F;
             this.bunifuTransition1.DefaultAnimation = animation1;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.bunifuTransition1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(153)))));
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(164, 300);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Bio";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Location = new System.Drawing.Point(6, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 15);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Study : ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Location = new System.Drawing.Point(6, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Faculity : ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Location = new System.Drawing.Point(5, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 15);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Social status : ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.label8.Location = new System.Drawing.Point(5, 83);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 15);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Support : ";
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.AutoSize = true;
-            this.tableLayoutPanel5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 517F));
-            this.tableLayoutPanel5.Controls.Add(this.write_post_in_profil1, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.groupBox1, 0, 0);
-            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 232);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(686, 306);
-            this.tableLayoutPanel5.TabIndex = 1;
-            // 
             // chat1
             // 
             this.chat1.BackColor = System.Drawing.Color.Maroon;
@@ -554,37 +586,6 @@
             this.chat1.Name = "chat1";
             this.chat1.Size = new System.Drawing.Size(174, 246);
             this.chat1.TabIndex = 1;
-            // 
-            // chat2
-            // 
-            this.chat2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.chat2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuTransition1.SetDecoration(this.chat2, BunifuAnimatorNS.DecorationType.None);
-            this.chat2.Location = new System.Drawing.Point(770, 158);
-            this.chat2.Name = "chat2";
-            this.chat2.Size = new System.Drawing.Size(181, 386);
-            this.chat2.TabIndex = 1;
-            // 
-            // write_post_in_profil1
-            // 
-            this.write_post_in_profil1.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.write_post_in_profil1, BunifuAnimatorNS.DecorationType.None);
-            this.write_post_in_profil1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.write_post_in_profil1.Location = new System.Drawing.Point(174, 3);
-            this.write_post_in_profil1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.write_post_in_profil1.Name = "write_post_in_profil1";
-            this.write_post_in_profil1.Size = new System.Drawing.Size(509, 144);
-            this.write_post_in_profil1.TabIndex = 16;
-            // 
-            // cover_profile_photo1
-            // 
-            this.cover_profile_photo1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuTransition1.SetDecoration(this.cover_profile_photo1, BunifuAnimatorNS.DecorationType.None);
-            this.cover_profile_photo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cover_profile_photo1.Location = new System.Drawing.Point(3, 3);
-            this.cover_profile_photo1.Name = "cover_profile_photo1";
-            this.cover_profile_photo1.Size = new System.Drawing.Size(686, 223);
-            this.cover_profile_photo1.TabIndex = 15;
             // 
             // profilepage
             // 
@@ -620,9 +621,9 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

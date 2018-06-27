@@ -102,7 +102,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(181, 38);
             this.panel1.TabIndex = 0;
-
+            // 
             // chat1
             // 
             this.chat1.BackColor = System.Drawing.Color.LightGray;
@@ -126,7 +126,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.bunifuTransition2.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
             this.panel4.Location = new System.Drawing.Point(43, 0);
             this.panel4.Name = "panel4";
@@ -135,7 +135,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.panel3.Controls.Add(this.chatdownbtn);
             this.bunifuTransition2.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Location = new System.Drawing.Point(0, 46);
@@ -161,7 +161,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.chat1);

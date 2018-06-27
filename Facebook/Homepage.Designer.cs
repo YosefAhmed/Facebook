@@ -55,12 +55,12 @@
             this.newspanle = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.chatpanle = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.write_post1 = new Facebook.Write_post();
+            this.chat1 = new Facebook.UserControls.chat();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -445,31 +445,18 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.chatpanle, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.chat1, 0, 1);
             this.bunifuTransition1.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(574, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.43956F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.56044F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.31718F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.68282F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(236, 454);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // chatpanle
-            // 
-            this.chatpanle.AutoScroll = true;
-            this.chatpanle.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.chatpanle, BunifuAnimatorNS.DecorationType.None);
-            this.chatpanle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chatpanle.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.chatpanle.Location = new System.Drawing.Point(3, 186);
-            this.chatpanle.Name = "chatpanle";
-            this.chatpanle.Size = new System.Drawing.Size(230, 265);
-            this.chatpanle.TabIndex = 1;
-            this.chatpanle.WrapContents = false;
             // 
             // tableLayoutPanel4
             // 
@@ -523,6 +510,16 @@
             this.write_post1.Name = "write_post1";
             this.write_post1.Size = new System.Drawing.Size(545, 158);
             this.write_post1.TabIndex = 0;
+            // 
+            // chat1
+            // 
+            this.chat1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.chat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.bunifuTransition1.SetDecoration(this.chat1, BunifuAnimatorNS.DecorationType.None);
+            this.chat1.Location = new System.Drawing.Point(52, 68);
+            this.chat1.Name = "chat1";
+            this.chat1.Size = new System.Drawing.Size(181, 383);
+            this.chat1.TabIndex = 0;
             // 
             // Homepage
             // 
@@ -588,9 +585,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.FlowLayoutPanel chatpanle;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private Write_post write_post1;
         private System.Windows.Forms.Panel panel3;
+        private UserControls.chat chat1;
     }
 }
