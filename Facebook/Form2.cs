@@ -23,62 +23,12 @@ namespace Facebook
 
         
         
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            string imagelocation="";
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(*.jpg)|*.jpg | PNG files(*.png)|*.png|All files(*.*)|*.*";
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                    imagelocation = dialog.FileName;
-
-                coverimage.ImageLocation = imagelocation;
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("An Error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string imagelocation2 = "";
-           
-            try
-            {
-                OpenFileDialog dialog2 = new OpenFileDialog();
-                dialog2.Filter = "jpg files(*.jpg)|*.jpg | PNG files(*.png)|*.png|All files(*.*)|*.*";
-                if (dialog2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                    imagelocation2 = dialog2.FileName;
 
-                profilepic.ImageLocation = imagelocation2;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("An Error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+ 
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            
-            bunifuTransition1.HideSync(panel3);
-            bunifuTransition1.ShowSync(chat1);
-            bunifuTransition1.HideSync(panel4);
-            bunifuTransition1.ShowSync(pictureBox9);
-        }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            bunifuTransition1.HideSync(chat1);
-            bunifuTransition1.ShowSync(panel3);
-            bunifuTransition1.ShowSync(panel4);
-            bunifuTransition1.HideSync(pictureBox9);
-            
-
-        }
         private void titlepar_MouseDown(object sender, MouseEventArgs e)
         {
             togmove = 1;
@@ -100,43 +50,8 @@ namespace Facebook
         }
 
 
-        private void posttxt_Enter(object sender, EventArgs e)
-        {
-            if (posttxt.Text == "What's on your mind?")
-            {
-                posttxt.Clear();
-                posttxt.Font = new Font(posttxt.Font.FontFamily, 10.0f);
-                posttxt.ForeColor = Color.Black;
-            }
-        }
-        private void posttxt_Leave(object sender, EventArgs e)
-        {
-            if (posttxt.Text == "")
-            {
-                posttxt.ForeColor = Color.Silver;
-                posttxt.Font = new Font(posttxt.Font.FontFamily, 14.0f, FontStyle.Bold);
-                posttxt.Text = "What's on your mind?";
-            }
-        }
+       
 
-        private void button3_Click_2(object sender, EventArgs e)
-        {
-            string imagelocation1 = "";
-
-            try
-            {
-                OpenFileDialog dialog2 = new OpenFileDialog();
-                dialog2.Filter = "jpg files(*.jpg)|*.jpg | PNG files(*.png)|*.png|All files(*.*)|*.*";
-                if (dialog2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                    imagelocation1 = dialog2.FileName;
-
-                coverimage.ImageLocation = imagelocation1;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("An Error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void searchtxt_Enter(object sender, EventArgs e)
         {
@@ -189,17 +104,13 @@ namespace Facebook
             searchtxt.Left = 250;
             this.searchtxt.Size = new Size(435, 20);
             searchbtn.Left = 657;
-            this.posttxt.Size = new Size(900, 210);
-            postbtn.Location = new Point(887, 215);
-            privacybtn.Location = new Point(6, 215);
-            tagbtn.Location = new Point(90, 215);
+
             homebtn.Location = new Point(845, 11);
             profilepicpanel.Location = new Point(735, 11);
         }
         public void aperancenormal()//for normalize
         {
             WindowState = FormWindowState.Normal;
-            //this.bunifuElipse1.ElipseRadius = 35;
             this.titlepar.Size = new Size(800, 45);
             maxmizebtn.Location = new Point(726, 2);
             minimizebtn.Location = new Point(692, 2);
@@ -211,13 +122,9 @@ namespace Facebook
             searchtxt.Location = new Point(83, 8);
             this.searchtxt.Size = new Size(317, 27);
             searchbtn.Location = new Point(371, 11);
-            this.postpanle.Size = new Size(479, 135);
-            this.posttxt.Size = new Size(509, 101);
-            postbtn.Location = new Point(475, 104);
-            privacybtn.Location = new Point(8, 104);
-            tagbtn.Location = new Point(96, 104);
             homebtn.Location = new Point(553, 11);
             profilepicpanel.Location = new Point(447, 11);
+            
         }
 
 
@@ -272,10 +179,6 @@ namespace Facebook
            H.Show();
            this.Close();
        }
-
-
-
-
 
 
 

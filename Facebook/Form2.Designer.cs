@@ -29,21 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(profilepage));
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.profilepic = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.profilepicpanel = new System.Windows.Forms.Panel();
             this.profilebtn = new System.Windows.Forms.Label();
             this.Profilpic = new System.Windows.Forms.PictureBox();
@@ -61,180 +50,40 @@
             this.Exitbtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.coverimage = new System.Windows.Forms.PictureBox();
-            this.postpanle = new System.Windows.Forms.Panel();
-            this.tagbtn = new System.Windows.Forms.Button();
-            this.postbtn = new System.Windows.Forms.Button();
-            this.privacybtn = new System.Windows.Forms.Button();
-            this.posttxt = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.chat1 = new Facebook.UserControls.chat();
-            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.chat2 = new Facebook.UserControls.chat();
+            this.write_post_in_profil1 = new Facebook.Write_post_in_profil();
+            this.cover_profile_photo1 = new Facebook.cover_profile_photo();
             this.panel2.SuspendLayout();
             this.profilepicpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Profilpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.titlepar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coverimage)).BeginInit();
-            this.postpanle.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 35;
-            this.bunifuElipse1.TargetControl = this.profilepic;
-            // 
-            // profilepic
-            // 
-            this.profilepic.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.profilepic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.profilepic, BunifuAnimatorNS.DecorationType.None);
-            this.profilepic.Image = global::Facebook.Properties.Resources.man_icon;
-            this.profilepic.Location = new System.Drawing.Point(79, 197);
-            this.profilepic.Name = "profilepic";
-            this.profilepic.Size = new System.Drawing.Size(101, 101);
-            this.profilepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.profilepic.TabIndex = 5;
-            this.profilepic.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(153)))));
-            this.bunifuTransition1.SetDecoration(this.button5, BunifuAnimatorNS.DecorationType.None);
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(6, 269);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(175, 36);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Chating";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // bunifuTransition1
-            // 
-            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-            this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.Controls.Add(this.button5);
-            this.bunifuTransition1.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.Location = new System.Drawing.Point(725, 243);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(181, 308);
-            this.panel3.TabIndex = 9;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuTransition1.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.Location = new System.Drawing.Point(756, 157);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(96, 80);
-            this.panel4.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(188, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 18);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "(Username)";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.bunifuTransition1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(153)))));
-            this.groupBox1.Location = new System.Drawing.Point(57, 304);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(182, 138);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Bio";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.label8.Location = new System.Drawing.Point(5, 83);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 15);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Support : ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Location = new System.Drawing.Point(5, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 15);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Social status : ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Location = new System.Drawing.Point(6, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Faculity : ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Location = new System.Drawing.Point(6, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 15);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Study : ";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.panel2.Controls.Add(this.tableLayoutPanel3);
             this.panel2.Controls.Add(this.profilepicpanel);
             this.panel2.Controls.Add(this.friendsbtn);
             this.panel2.Controls.Add(this.homebtn);
@@ -248,15 +97,30 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(902, 45);
+            this.panel2.Size = new System.Drawing.Size(954, 45);
             this.panel2.TabIndex = 20;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(57, 54);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(662, 355);
+            this.tableLayoutPanel3.TabIndex = 17;
             // 
             // profilepicpanel
             // 
+            this.profilepicpanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.profilepicpanel.Controls.Add(this.profilebtn);
             this.profilepicpanel.Controls.Add(this.Profilpic);
             this.bunifuTransition1.SetDecoration(this.profilepicpanel, BunifuAnimatorNS.DecorationType.None);
-            this.profilepicpanel.Location = new System.Drawing.Point(444, 11);
+            this.profilepicpanel.Location = new System.Drawing.Point(478, 11);
             this.profilepicpanel.Name = "profilepicpanel";
             this.profilepicpanel.Size = new System.Drawing.Size(91, 27);
             this.profilepicpanel.TabIndex = 16;
@@ -290,7 +154,7 @@
             // 
             // friendsbtn
             // 
-            this.friendsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.friendsbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.friendsbtn.BackColor = System.Drawing.Color.Transparent;
             this.friendsbtn.BackgroundImage = global::Facebook.Properties.Resources.frinds1;
             this.friendsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -299,7 +163,7 @@
             this.friendsbtn.FlatAppearance.BorderSize = 0;
             this.friendsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.friendsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.friendsbtn.Location = new System.Drawing.Point(663, 3);
+            this.friendsbtn.Location = new System.Drawing.Point(739, 3);
             this.friendsbtn.Name = "friendsbtn";
             this.friendsbtn.Size = new System.Drawing.Size(29, 40);
             this.friendsbtn.TabIndex = 12;
@@ -307,7 +171,7 @@
             // 
             // homebtn
             // 
-            this.homebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.homebtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.homebtn.BackColor = System.Drawing.Color.Transparent;
             this.homebtn.BackgroundImage = global::Facebook.Properties.Resources.Home_2_icon;
             this.homebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -317,7 +181,7 @@
             this.homebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.homebtn.Location = new System.Drawing.Point(553, 11);
+            this.homebtn.Location = new System.Drawing.Point(595, 11);
             this.homebtn.Name = "homebtn";
             this.homebtn.Size = new System.Drawing.Size(73, 27);
             this.homebtn.TabIndex = 14;
@@ -328,7 +192,7 @@
             // 
             // settingsbtn
             // 
-            this.settingsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.settingsbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.settingsbtn.BackColor = System.Drawing.Color.Transparent;
             this.settingsbtn.BackgroundImage = global::Facebook.Properties.Resources.settings1;
             this.settingsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -337,7 +201,7 @@
             this.settingsbtn.FlatAppearance.BorderSize = 0;
             this.settingsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsbtn.Location = new System.Drawing.Point(822, 3);
+            this.settingsbtn.Location = new System.Drawing.Point(898, 3);
             this.settingsbtn.Name = "settingsbtn";
             this.settingsbtn.Size = new System.Drawing.Size(29, 40);
             this.settingsbtn.TabIndex = 13;
@@ -345,7 +209,7 @@
             // 
             // notificationbtn
             // 
-            this.notificationbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.notificationbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.notificationbtn.BackColor = System.Drawing.Color.Transparent;
             this.notificationbtn.BackgroundImage = global::Facebook.Properties.Resources.notifecations1;
             this.notificationbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -354,7 +218,7 @@
             this.notificationbtn.FlatAppearance.BorderSize = 0;
             this.notificationbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.notificationbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notificationbtn.Location = new System.Drawing.Point(747, 3);
+            this.notificationbtn.Location = new System.Drawing.Point(823, 3);
             this.notificationbtn.Name = "notificationbtn";
             this.notificationbtn.Size = new System.Drawing.Size(29, 40);
             this.notificationbtn.TabIndex = 11;
@@ -362,6 +226,7 @@
             // 
             // messagesbtn
             // 
+            this.messagesbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.messagesbtn.BackColor = System.Drawing.Color.Transparent;
             this.messagesbtn.BackgroundImage = global::Facebook.Properties.Resources.messages1;
             this.messagesbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -370,7 +235,7 @@
             this.messagesbtn.FlatAppearance.BorderSize = 0;
             this.messagesbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.messagesbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messagesbtn.Location = new System.Drawing.Point(708, 3);
+            this.messagesbtn.Location = new System.Drawing.Point(782, 3);
             this.messagesbtn.Name = "messagesbtn";
             this.messagesbtn.Size = new System.Drawing.Size(29, 40);
             this.messagesbtn.TabIndex = 10;
@@ -429,7 +294,7 @@
             this.titlepar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlepar.Location = new System.Drawing.Point(0, 0);
             this.titlepar.Name = "titlepar";
-            this.titlepar.Size = new System.Drawing.Size(902, 27);
+            this.titlepar.Size = new System.Drawing.Size(954, 27);
             this.titlepar.TabIndex = 19;
             this.titlepar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlepar_MouseDown_2);
             this.titlepar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titlepar_MouseMove_2);
@@ -446,7 +311,7 @@
             this.minimizebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.minimizebtn.ForeColor = System.Drawing.Color.White;
             this.minimizebtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.minimizebtn.Location = new System.Drawing.Point(821, 0);
+            this.minimizebtn.Location = new System.Drawing.Point(873, 0);
             this.minimizebtn.Name = "minimizebtn";
             this.minimizebtn.Size = new System.Drawing.Size(27, 27);
             this.minimizebtn.TabIndex = 9;
@@ -465,7 +330,7 @@
             this.maxmizebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.maxmizebtn.ForeColor = System.Drawing.Color.White;
             this.maxmizebtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.maxmizebtn.Location = new System.Drawing.Point(848, 0);
+            this.maxmizebtn.Location = new System.Drawing.Point(900, 0);
             this.maxmizebtn.Name = "maxmizebtn";
             this.maxmizebtn.Size = new System.Drawing.Size(27, 27);
             this.maxmizebtn.TabIndex = 8;
@@ -484,7 +349,7 @@
             this.Exitbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Exitbtn.Image = ((System.Drawing.Image)(resources.GetObject("Exitbtn.Image")));
             this.Exitbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Exitbtn.Location = new System.Drawing.Point(875, 0);
+            this.Exitbtn.Location = new System.Drawing.Point(927, 0);
             this.Exitbtn.Name = "Exitbtn";
             this.Exitbtn.Size = new System.Drawing.Size(27, 27);
             this.Exitbtn.TabIndex = 7;
@@ -515,178 +380,211 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Facebook - Your Distinct Way To Connect the World!";
             // 
-            // button3
+            // tableLayoutPanel1
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::Facebook.Properties.Resources.up_icon;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.button3, BunifuAnimatorNS.DecorationType.None);
-            this.button3.Location = new System.Drawing.Point(664, 243);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(25, 23);
-            this.button3.TabIndex = 21;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_2);
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 534F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(960, 629);
+            this.tableLayoutPanel1.TabIndex = 23;
             // 
-            // pictureBox12
+            // panel1
             // 
-            this.pictureBox12.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuTransition1.SetDecoration(this.pictureBox12, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox12.Image = global::Facebook.Properties.Resources.Emotes_face_smile_icon;
-            this.pictureBox12.Location = new System.Drawing.Point(81, 101);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(33, 34);
-            this.pictureBox12.TabIndex = 18;
-            this.pictureBox12.TabStop = false;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.titlepar);
+            this.bunifuTransition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(954, 70);
+            this.panel1.TabIndex = 0;
             // 
-            // pictureBox11
+            // tableLayoutPanel2
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuTransition1.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox11.Image = global::Facebook.Properties.Resources.video_camera_icon;
-            this.pictureBox11.Location = new System.Drawing.Point(42, 101);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(33, 34);
-            this.pictureBox11.TabIndex = 17;
-            this.pictureBox11.TabStop = false;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.878151F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.12185F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.chat2, 2, 0);
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel2, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 79);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(954, 547);
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // pictureBox10
+            // tableLayoutPanel4
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuTransition1.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox10.Image = global::Facebook.Properties.Resources.camera_icon;
-            this.pictureBox10.Location = new System.Drawing.Point(3, 101);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(33, 34);
-            this.pictureBox10.TabIndex = 16;
-            this.pictureBox10.TabStop = false;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.cover_profile_photo1, 0, 0);
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel4, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(62, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 229F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(692, 541);
+            this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // pictureBox9
+            // bunifuElipse1
             // 
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bunifuTransition1.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox9.Image = global::Facebook.Properties.Resources.scroll_down_icon;
-            this.pictureBox9.Location = new System.Drawing.Point(790, 219);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 18);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
             // 
-            // button4
+            // bunifuTransition1
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::Facebook.Properties.Resources.up_icon;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.button4, BunifuAnimatorNS.DecorationType.None);
-            this.button4.Location = new System.Drawing.Point(159, 280);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(23, 18);
-            this.button4.TabIndex = 6;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
-            // coverimage
+            // groupBox1
             // 
-            this.coverimage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.coverimage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.coverimage, BunifuAnimatorNS.DecorationType.None);
-            this.coverimage.Location = new System.Drawing.Point(57, 81);
-            this.coverimage.Name = "coverimage";
-            this.coverimage.Size = new System.Drawing.Size(632, 185);
-            this.coverimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.coverimage.TabIndex = 3;
-            this.coverimage.TabStop = false;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.bunifuTransition1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(153)))));
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(164, 300);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Bio";
             // 
-            // postpanle
+            // label5
             // 
-            this.postpanle.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.postpanle.Controls.Add(this.tagbtn);
-            this.postpanle.Controls.Add(this.postbtn);
-            this.postpanle.Controls.Add(this.privacybtn);
-            this.postpanle.Controls.Add(this.posttxt);
-            this.postpanle.Controls.Add(this.pictureBox12);
-            this.postpanle.Controls.Add(this.pictureBox11);
-            this.postpanle.Controls.Add(this.pictureBox10);
-            this.bunifuTransition1.SetDecoration(this.postpanle, BunifuAnimatorNS.DecorationType.None);
-            this.postpanle.Location = new System.Drawing.Point(256, 304);
-            this.postpanle.Name = "postpanle";
-            this.postpanle.Size = new System.Drawing.Size(433, 138);
-            this.postpanle.TabIndex = 22;
+            this.label5.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Location = new System.Drawing.Point(6, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 15);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Study : ";
             // 
-            // tagbtn
+            // label6
             // 
-            this.tagbtn.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.tagbtn, BunifuAnimatorNS.DecorationType.None);
-            this.tagbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tagbtn.FlatAppearance.BorderSize = 0;
-            this.tagbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tagbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tagbtn.ForeColor = System.Drawing.Color.Gray;
-            this.tagbtn.Image = global::Facebook.Properties.Resources.tag;
-            this.tagbtn.Location = new System.Drawing.Point(207, 104);
-            this.tagbtn.Name = "tagbtn";
-            this.tagbtn.Size = new System.Drawing.Size(101, 27);
-            this.tagbtn.TabIndex = 1;
-            this.tagbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tagbtn.UseVisualStyleBackColor = false;
+            this.label6.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Location = new System.Drawing.Point(6, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Faculity : ";
             // 
-            // postbtn
+            // label7
             // 
-            this.postbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.bunifuTransition1.SetDecoration(this.postbtn, BunifuAnimatorNS.DecorationType.None);
-            this.postbtn.FlatAppearance.BorderSize = 0;
-            this.postbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.postbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.postbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.postbtn.Location = new System.Drawing.Point(337, 103);
-            this.postbtn.Name = "postbtn";
-            this.postbtn.Size = new System.Drawing.Size(94, 27);
-            this.postbtn.TabIndex = 1;
-            this.postbtn.Text = "post";
-            this.postbtn.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Location = new System.Drawing.Point(5, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 15);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Social status : ";
             // 
-            // privacybtn
+            // label8
             // 
-            this.privacybtn.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.privacybtn, BunifuAnimatorNS.DecorationType.None);
-            this.privacybtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.privacybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.privacybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.privacybtn.ForeColor = System.Drawing.Color.Gray;
-            this.privacybtn.Image = global::Facebook.Properties.Resources.publi;
-            this.privacybtn.Location = new System.Drawing.Point(126, 104);
-            this.privacybtn.Name = "privacybtn";
-            this.privacybtn.Size = new System.Drawing.Size(75, 28);
-            this.privacybtn.TabIndex = 1;
-            this.privacybtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.privacybtn.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.label8.Location = new System.Drawing.Point(5, 83);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 15);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Support : ";
             // 
-            // posttxt
+            // tableLayoutPanel5
             // 
-            this.posttxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTransition1.SetDecoration(this.posttxt, BunifuAnimatorNS.DecorationType.None);
-            this.posttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.posttxt.ForeColor = System.Drawing.Color.Silver;
-            this.posttxt.Location = new System.Drawing.Point(0, 0);
-            this.posttxt.Multiline = true;
-            this.posttxt.Name = "posttxt";
-            this.posttxt.Size = new System.Drawing.Size(431, 98);
-            this.posttxt.TabIndex = 0;
-            this.posttxt.Text = "What\'s on your mind?";
-            this.posttxt.Enter += new System.EventHandler(this.posttxt_Enter);
-            this.posttxt.Leave += new System.EventHandler(this.posttxt_Leave);
+            this.tableLayoutPanel5.AutoSize = true;
+            this.tableLayoutPanel5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 517F));
+            this.tableLayoutPanel5.Controls.Add(this.write_post_in_profil1, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.groupBox1, 0, 0);
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 232);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(686, 306);
+            this.tableLayoutPanel5.TabIndex = 1;
             // 
             // chat1
             // 
-            this.chat1.BackColor = System.Drawing.Color.LightGray;
-            this.chat1.Button5 = null;
+            this.chat1.BackColor = System.Drawing.Color.Maroon;
             this.bunifuTransition1.SetDecoration(this.chat1, BunifuAnimatorNS.DecorationType.None);
-            this.chat1.Location = new System.Drawing.Point(725, 243);
+            this.chat1.Location = new System.Drawing.Point(1532, 321);
             this.chat1.Name = "chat1";
-            this.chat1.Size = new System.Drawing.Size(178, 298);
-            this.chat1.TabIndex = 8;
+            this.chat1.Size = new System.Drawing.Size(174, 246);
+            this.chat1.TabIndex = 1;
+            // 
+            // chat2
+            // 
+            this.chat2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.chat2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuTransition1.SetDecoration(this.chat2, BunifuAnimatorNS.DecorationType.None);
+            this.chat2.Location = new System.Drawing.Point(770, 158);
+            this.chat2.Name = "chat2";
+            this.chat2.Size = new System.Drawing.Size(181, 386);
+            this.chat2.TabIndex = 1;
+            // 
+            // write_post_in_profil1
+            // 
+            this.write_post_in_profil1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.write_post_in_profil1, BunifuAnimatorNS.DecorationType.None);
+            this.write_post_in_profil1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.write_post_in_profil1.Location = new System.Drawing.Point(174, 3);
+            this.write_post_in_profil1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.write_post_in_profil1.Name = "write_post_in_profil1";
+            this.write_post_in_profil1.Size = new System.Drawing.Size(509, 144);
+            this.write_post_in_profil1.TabIndex = 16;
+            // 
+            // cover_profile_photo1
+            // 
+            this.cover_profile_photo1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuTransition1.SetDecoration(this.cover_profile_photo1, BunifuAnimatorNS.DecorationType.None);
+            this.cover_profile_photo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cover_profile_photo1.Location = new System.Drawing.Point(3, 3);
+            this.cover_profile_photo1.Name = "cover_profile_photo1";
+            this.cover_profile_photo1.Size = new System.Drawing.Size(686, 223);
+            this.cover_profile_photo1.TabIndex = 15;
             // 
             // profilepage
             // 
@@ -695,20 +593,9 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(902, 542);
-            this.Controls.Add(this.postpanle);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.titlepar);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(960, 629);
             this.Controls.Add(this.chat1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.profilepic);
-            this.Controls.Add(this.coverimage);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -718,10 +605,6 @@
             this.Text = "Form2";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.profilepage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.profilepicpanel.ResumeLayout(false);
@@ -731,39 +614,21 @@
             this.titlepar.ResumeLayout(false);
             this.titlepar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coverimage)).EndInit();
-            this.postpanle.ResumeLayout(false);
-            this.postpanle.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.PictureBox coverimage;
-        private System.Windows.Forms.PictureBox profilepic;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
-        private UserControls.chat chat1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button friendsbtn;
         private System.Windows.Forms.Button homebtn;
@@ -776,18 +641,29 @@
         private System.Windows.Forms.Panel titlepar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button tagbtn;
-        private System.Windows.Forms.Panel postpanle;
-        private System.Windows.Forms.Button postbtn;
-        private System.Windows.Forms.TextBox posttxt;
-        private System.Windows.Forms.Button privacybtn;
         private System.Windows.Forms.Panel profilepicpanel;
         private System.Windows.Forms.Label profilebtn;
         private System.Windows.Forms.PictureBox Profilpic;
         private System.Windows.Forms.Button minimizebtn;
         private System.Windows.Forms.Button maxmizebtn;
         private System.Windows.Forms.Button Exitbtn;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private UserControls.chat chat1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private UserControls.chat chat2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private Write_post_in_profil write_post_in_profil1;
+        private cover_profile_photo cover_profile_photo1;
 
         public bool Win { get; set; }
     }

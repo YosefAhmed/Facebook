@@ -58,9 +58,9 @@
             this.chatpanle = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.write_post1 = new Facebook.Write_post();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -376,6 +376,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.facebookicon_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -469,7 +470,6 @@
             this.chatpanle.Size = new System.Drawing.Size(230, 265);
             this.chatpanle.TabIndex = 1;
             this.chatpanle.WrapContents = false;
-            this.chatpanle.Paint += new System.Windows.Forms.PaintEventHandler(this.chatpanle_Paint);
             // 
             // tableLayoutPanel4
             // 
@@ -486,7 +486,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.08487F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(902, 542);
             this.tableLayoutPanel4.TabIndex = 7;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // tableLayoutPanel5
             // 
@@ -500,19 +499,9 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 466F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(896, 466);
             this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // write_post1
-            // 
-            this.write_post1.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.write_post1, BunifuAnimatorNS.DecorationType.None);
-            this.write_post1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.write_post1.Location = new System.Drawing.Point(3, 3);
-            this.write_post1.Name = "write_post1";
-            this.write_post1.Size = new System.Drawing.Size(545, 158);
-            this.write_post1.TabIndex = 0;
             // 
             // panel3
             // 
@@ -525,6 +514,16 @@
             this.panel3.Size = new System.Drawing.Size(896, 64);
             this.panel3.TabIndex = 1;
             // 
+            // write_post1
+            // 
+            this.write_post1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.write_post1, BunifuAnimatorNS.DecorationType.None);
+            this.write_post1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.write_post1.Location = new System.Drawing.Point(3, 3);
+            this.write_post1.Name = "write_post1";
+            this.write_post1.Size = new System.Drawing.Size(545, 158);
+            this.write_post1.TabIndex = 0;
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,6 +534,7 @@
             this.Controls.Add(this.tableLayoutPanel4);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";

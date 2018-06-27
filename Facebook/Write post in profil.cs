@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Facebook
 {
-    public partial class Write_post : UserControl
+    public partial class Write_post_in_profil : UserControl
     {
-        public Write_post()
+        public Write_post_in_profil()
         {
             InitializeComponent();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void posttxt_Enter(object sender, EventArgs e)
@@ -35,11 +40,6 @@ namespace Facebook
                 posttxt.Font = new Font(posttxt.Font.FontFamily, 14.0f, FontStyle.Bold);
                 posttxt.Text = "What's on your mind?";
             }
-        }
-
-        private void Write_post_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

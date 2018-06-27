@@ -12,3 +12,6 @@ D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.csproj.
 D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.UserControls.chat.resources
 D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.profilepage.resources
 D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Write_post.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.Write_post_in_profil.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.cover_profile_photo.resources
+D:\programming\visual studio\GUI\C#\Facebook\Facebook\obj\Debug\Facebook.csprojResolveAssemblyReference.cache

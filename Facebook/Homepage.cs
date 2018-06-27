@@ -35,14 +35,11 @@ namespace Facebook
             searchbtn.Left = 657;
             homebtn.Location = new Point(845, 11);
             profilepicpanel.Location = new Point(735, 11);
-           
-
-        }
+           }
         public void aperancenormal()//for normal
         {
             WindowState = FormWindowState.Normal;
             this.panel1.Size = new Size(800, 45);
-
             friendsbtn.Location = new Point(663, 3);
             messagesbtn.Location = new Point(708, 3);
             notificationbtn.Location = new Point(747, 3);
@@ -50,7 +47,6 @@ namespace Facebook
             searchtxt.Location = new Point(83, 8);
             this.searchtxt.Size = new Size(317, 27);
             searchbtn.Location = new Point(371, 11);
-
             homebtn.Location = new Point(553, 11);
             profilepicpanel.Location = new Point(447, 11);
             }
@@ -167,31 +163,11 @@ namespace Facebook
             H.Show();
             this.Close();
         }
-
-        private void newspanle_Paint(object sender, PaintEventArgs e)
+        private void facebookicon_Click(object sender, EventArgs e)
         {
-
+            Homepage H = new Homepage();
+            H.Show();
+            this.Close();
         }
-
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void chatpanle_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
-
-
-  
-     
-
-
- 
-
     }
 }

@@ -18,26 +18,16 @@ namespace Facebook.UserControls
         {
             InitializeComponent();
         }
-
-        private void panel1_Enter(object sender, EventArgs e)
+        private void chatbtn_Click(object sender, EventArgs e)
         {
-            
+            bunifuTransition2.HideSync(panel3);
+            bunifuTransition2.HideSync(panel4);
+        }
+        private void closechatbtn_Click(object sender, EventArgs e)
+        {
+            bunifuTransition2.ShowSync(panel4);
+            bunifuTransition2.ShowSync(panel3);
         }
 
-        private void panel1_Click(object sender, EventArgs e)
-        {
-   
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
-        public Control Button5 { get; set; }
-
-        //public Control Panel3 { get; set; }
     }
 }

@@ -30,29 +30,35 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.posttxt = new System.Windows.Forms.TextBox();
+            this.emojy = new System.Windows.Forms.Button();
+            this.uploadvideo = new System.Windows.Forms.Button();
+            this.uploadphoto = new System.Windows.Forms.Button();
+            this.postbtn = new System.Windows.Forms.Button();
             this.privacybtn = new System.Windows.Forms.Button();
             this.tagbtn = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.postbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.posttxt, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.78481F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.21519F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(546, 158);
             this.tableLayoutPanel1.TabIndex = 22;
             // 
@@ -68,12 +74,76 @@
             this.posttxt.Size = new System.Drawing.Size(540, 109);
             this.posttxt.TabIndex = 2;
             this.posttxt.Text = "What\'s on your mind?";
-            this.posttxt.TextChanged += new System.EventHandler(this.posttxt_TextChanged);
             this.posttxt.Enter += new System.EventHandler(this.posttxt_Enter);
             this.posttxt.Leave += new System.EventHandler(this.posttxt_Leave);
             // 
+            // emojy
+            // 
+            this.emojy.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.emojy.BackColor = System.Drawing.Color.Transparent;
+            this.emojy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.emojy.FlatAppearance.BorderSize = 0;
+            this.emojy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.emojy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emojy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.emojy.Image = global::Facebook.Properties.Resources.Emotes_face_smile_icon;
+            this.emojy.Location = new System.Drawing.Point(271, 0);
+            this.emojy.Name = "emojy";
+            this.emojy.Size = new System.Drawing.Size(36, 37);
+            this.emojy.TabIndex = 8;
+            this.emojy.UseVisualStyleBackColor = false;
+            // 
+            // uploadvideo
+            // 
+            this.uploadvideo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.uploadvideo.BackColor = System.Drawing.Color.Transparent;
+            this.uploadvideo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadvideo.FlatAppearance.BorderSize = 0;
+            this.uploadvideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadvideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadvideo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.uploadvideo.Image = global::Facebook.Properties.Resources.video_camera_icon;
+            this.uploadvideo.Location = new System.Drawing.Point(229, 0);
+            this.uploadvideo.Name = "uploadvideo";
+            this.uploadvideo.Size = new System.Drawing.Size(36, 37);
+            this.uploadvideo.TabIndex = 7;
+            this.uploadvideo.UseVisualStyleBackColor = false;
+            // 
+            // uploadphoto
+            // 
+            this.uploadphoto.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.uploadphoto.BackColor = System.Drawing.Color.Transparent;
+            this.uploadphoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadphoto.FlatAppearance.BorderSize = 0;
+            this.uploadphoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadphoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadphoto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.uploadphoto.Image = global::Facebook.Properties.Resources.camera_icon;
+            this.uploadphoto.Location = new System.Drawing.Point(187, 0);
+            this.uploadphoto.Name = "uploadphoto";
+            this.uploadphoto.Size = new System.Drawing.Size(36, 37);
+            this.uploadphoto.TabIndex = 6;
+            this.uploadphoto.UseVisualStyleBackColor = false;
+            // 
+            // postbtn
+            // 
+            this.postbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.postbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.postbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.postbtn.FlatAppearance.BorderSize = 0;
+            this.postbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.postbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.postbtn.Location = new System.Drawing.Point(441, 0);
+            this.postbtn.Name = "postbtn";
+            this.postbtn.Size = new System.Drawing.Size(99, 37);
+            this.postbtn.TabIndex = 5;
+            this.postbtn.Text = "post";
+            this.postbtn.UseVisualStyleBackColor = false;
+            // 
             // privacybtn
             // 
+            this.privacybtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.privacybtn.BackColor = System.Drawing.Color.White;
             this.privacybtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.privacybtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -81,16 +151,16 @@
             this.privacybtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.privacybtn.ForeColor = System.Drawing.Color.Gray;
             this.privacybtn.Image = global::Facebook.Properties.Resources.publi;
-            this.privacybtn.Location = new System.Drawing.Point(3, 3);
+            this.privacybtn.Location = new System.Drawing.Point(0, 0);
             this.privacybtn.Name = "privacybtn";
-            this.privacybtn.Size = new System.Drawing.Size(75, 31);
+            this.privacybtn.Size = new System.Drawing.Size(75, 37);
             this.privacybtn.TabIndex = 4;
             this.privacybtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.privacybtn.UseVisualStyleBackColor = false;
-            this.privacybtn.Click += new System.EventHandler(this.privacybtn_Click);
             // 
             // tagbtn
             // 
+            this.tagbtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tagbtn.BackColor = System.Drawing.Color.White;
             this.tagbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tagbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -99,110 +169,40 @@
             this.tagbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tagbtn.ForeColor = System.Drawing.Color.Gray;
             this.tagbtn.Image = global::Facebook.Properties.Resources.tag;
-            this.tagbtn.Location = new System.Drawing.Point(84, 3);
+            this.tagbtn.Location = new System.Drawing.Point(82, 0);
             this.tagbtn.Name = "tagbtn";
-            this.tagbtn.Size = new System.Drawing.Size(98, 31);
+            this.tagbtn.Size = new System.Drawing.Size(98, 37);
             this.tagbtn.TabIndex = 3;
             this.tagbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tagbtn.UseVisualStyleBackColor = false;
             // 
-            // tableLayoutPanel2
+            // panel1
             // 
-            this.tableLayoutPanel2.ColumnCount = 7;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.postbtn, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.privacybtn, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tagbtn, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 118);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 37);
-            this.tableLayoutPanel2.TabIndex = 3;
-            // 
-            // postbtn
-            // 
-            this.postbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.postbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.postbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.postbtn.FlatAppearance.BorderSize = 0;
-            this.postbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.postbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.postbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.postbtn.Location = new System.Drawing.Point(438, 3);
-            this.postbtn.Name = "postbtn";
-            this.postbtn.Size = new System.Drawing.Size(99, 31);
-            this.postbtn.TabIndex = 5;
-            this.postbtn.Text = "post";
-            this.postbtn.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::Facebook.Properties.Resources.camera_icon;
-            this.button1.Location = new System.Drawing.Point(188, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 31);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = global::Facebook.Properties.Resources.video_camera_icon;
-            this.button2.Location = new System.Drawing.Point(230, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 31);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Image = global::Facebook.Properties.Resources.Emotes_face_smile_icon;
-            this.button3.Location = new System.Drawing.Point(272, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 31);
-            this.button3.TabIndex = 8;
-            this.button3.UseVisualStyleBackColor = false;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.emojy);
+            this.panel1.Controls.Add(this.tagbtn);
+            this.panel1.Controls.Add(this.postbtn);
+            this.panel1.Controls.Add(this.uploadvideo);
+            this.panel1.Controls.Add(this.privacybtn);
+            this.panel1.Controls.Add(this.uploadphoto);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 118);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(540, 37);
+            this.panel1.TabIndex = 3;
             // 
             // Write_post
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.DarkRed;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Write_post";
             this.Size = new System.Drawing.Size(546, 158);
+            this.Load += new System.EventHandler(this.Write_post_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -211,12 +211,12 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox posttxt;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button privacybtn;
         private System.Windows.Forms.Button tagbtn;
         private System.Windows.Forms.Button postbtn;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button emojy;
+        private System.Windows.Forms.Button uploadvideo;
+        private System.Windows.Forms.Button uploadphoto;
+        private System.Windows.Forms.Panel panel1;
     }
 }
