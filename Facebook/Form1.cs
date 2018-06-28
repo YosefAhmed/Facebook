@@ -70,6 +70,7 @@ namespace Facebook
             bunifuTransition1.HideSync(userControl11);
             bunifuTransition1.HideSync(userControl21);
             bunifuTransition1.HideSync(button4);
+
         }
         public Point mouslocation;
         private void panel1_MouseDown(object sender, MouseEventArgs e)

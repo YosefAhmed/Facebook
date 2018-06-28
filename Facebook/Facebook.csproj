@@ -56,10 +56,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cover profile photo.cs">
+    <Compile Include="Account.cs" />
+    <Compile Include="UserControls\cover profile photo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="cover profile photo.Designer.cs">
+    <Compile Include="UserControls\cover profile photo.Designer.cs">
       <DependentUpon>cover profile photo.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -106,19 +107,19 @@
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="WinAPI.cs" />
-    <Compile Include="Write post in profil.cs">
+    <Compile Include="UserControls\Write post in profil.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Write post in profil.Designer.cs">
+    <Compile Include="UserControls\Write post in profil.Designer.cs">
       <DependentUpon>Write post in profil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Write post.cs">
+    <Compile Include="UserControls\Write post.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Write post.Designer.cs">
+    <Compile Include="UserControls\Write post.Designer.cs">
       <DependentUpon>Write post.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="cover profile photo.resx">
+    <EmbeddedResource Include="UserControls\cover profile photo.resx">
       <DependentUpon>cover profile photo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
@@ -144,10 +145,10 @@
     <EmbeddedResource Include="UserControls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Write post in profil.resx">
+    <EmbeddedResource Include="UserControls\Write post in profil.resx">
       <DependentUpon>Write post in profil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Write post.resx">
+    <EmbeddedResource Include="UserControls\Write post.resx">
       <DependentUpon>Write post.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
