@@ -104,9 +104,10 @@ namespace Facebook
             searchtxt.Left = 250;
             this.searchtxt.Size = new Size(435, 20);
             searchbtn.Left = 657;
-
             homebtn.Location = new Point(845, 11);
             profilepicpanel.Location = new Point(735, 11);
+            this.cover_profile_photo1.Size = new Size(915, 281);
+            this.write_post_in_profil1.Size = new Size(604,165);
         }
         public void aperancenormal()//for normalize
         {
@@ -124,7 +125,7 @@ namespace Facebook
             searchbtn.Location = new Point(371, 11);
             homebtn.Location = new Point(553, 11);
             profilepicpanel.Location = new Point(447, 11);
-            
+            this.write_post_in_profil1.Size = new Size(413, 144);            
         }
 
 
@@ -178,6 +179,22 @@ namespace Facebook
            Homepage H = new Homepage();
            H.Show();
            this.Close();
+       }
+
+       private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+       {
+
+       }
+
+       private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+       {
+
+       }
+
+       private void postbtn_Click(object sender, EventArgs e)
+       {
+           Button b = new Button();
+           flowLayoutPanel1.Controls.Add(b);
        }
 
 

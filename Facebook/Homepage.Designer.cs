@@ -54,13 +54,14 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.newspanle = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.write_post1 = new Facebook.Write_post();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.chat1 = new Facebook.UserControls.chat();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.write_post1 = new Facebook.Write_post();
-            this.chat1 = new Facebook.UserControls.chat();
+            this.postbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.newspanle.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -417,6 +419,7 @@
             // 
             this.newspanle.AutoScroll = true;
             this.newspanle.BackColor = System.Drawing.Color.White;
+            this.newspanle.Controls.Add(this.postbtn);
             this.bunifuTransition1.SetDecoration(this.newspanle, BunifuAnimatorNS.DecorationType.None);
             this.newspanle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.newspanle.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -441,6 +444,16 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(551, 178);
             this.tableLayoutPanel6.TabIndex = 5;
             // 
+            // write_post1
+            // 
+            this.write_post1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.write_post1, BunifuAnimatorNS.DecorationType.None);
+            this.write_post1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.write_post1.Location = new System.Drawing.Point(3, 3);
+            this.write_post1.Name = "write_post1";
+            this.write_post1.Size = new System.Drawing.Size(545, 158);
+            this.write_post1.TabIndex = 0;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -457,6 +470,16 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(236, 454);
             this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // chat1
+            // 
+            this.chat1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.chat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.bunifuTransition1.SetDecoration(this.chat1, BunifuAnimatorNS.DecorationType.None);
+            this.chat1.Location = new System.Drawing.Point(52, 68);
+            this.chat1.Name = "chat1";
+            this.chat1.Size = new System.Drawing.Size(181, 383);
+            this.chat1.TabIndex = 0;
             // 
             // tableLayoutPanel4
             // 
@@ -501,25 +524,23 @@
             this.panel3.Size = new System.Drawing.Size(896, 64);
             this.panel3.TabIndex = 1;
             // 
-            // write_post1
+            // postbtn
             // 
-            this.write_post1.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.write_post1, BunifuAnimatorNS.DecorationType.None);
-            this.write_post1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.write_post1.Location = new System.Drawing.Point(3, 3);
-            this.write_post1.Name = "write_post1";
-            this.write_post1.Size = new System.Drawing.Size(545, 158);
-            this.write_post1.TabIndex = 0;
-            // 
-            // chat1
-            // 
-            this.chat1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.chat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
-            this.bunifuTransition1.SetDecoration(this.chat1, BunifuAnimatorNS.DecorationType.None);
-            this.chat1.Location = new System.Drawing.Point(52, 68);
-            this.chat1.Name = "chat1";
-            this.chat1.Size = new System.Drawing.Size(181, 383);
-            this.chat1.TabIndex = 0;
+            this.postbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.postbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.postbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.postbtn, BunifuAnimatorNS.DecorationType.None);
+            this.postbtn.FlatAppearance.BorderSize = 0;
+            this.postbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.postbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.postbtn.Location = new System.Drawing.Point(3, 3);
+            this.postbtn.Name = "postbtn";
+            this.postbtn.Size = new System.Drawing.Size(106, 32);
+            this.postbtn.TabIndex = 18;
+            this.postbtn.Text = "post";
+            this.postbtn.UseVisualStyleBackColor = false;
+            this.postbtn.Click += new System.EventHandler(this.postbtn_Click);
             // 
             // Homepage
             // 
@@ -547,6 +568,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.newspanle.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -589,5 +611,6 @@
         private Write_post write_post1;
         private System.Windows.Forms.Panel panel3;
         private UserControls.chat chat1;
+        private System.Windows.Forms.Button postbtn;
     }
 }

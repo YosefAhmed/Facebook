@@ -169,5 +169,11 @@ namespace Facebook
             H.Show();
             this.Close();
         }
+
+        private void postbtn_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();
+            newspanle.Controls.Add(b);
+        }
     }
 }

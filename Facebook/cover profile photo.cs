@@ -53,10 +53,5 @@ namespace Facebook
                 MessageBox.Show("An Error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
