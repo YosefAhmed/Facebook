@@ -53,7 +53,7 @@ namespace Facebook
 
 
 
-        SqlConnection con =new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=FBaccount;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=MEDO-GAD\SQLEXPRESS;Initial Catalog=FBaccount;Integrated Security=True");
         //private void postbtn_Click_1(object sender, EventArgs e)
         //{
         //    //  flowLayoutPanel1.Controls.Add(p);
@@ -170,10 +170,9 @@ namespace Facebook
             this.Close();
         }
 
-        private void postbtn_Click(object sender, EventArgs e)
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
         {
-            Button b = new Button();
-            newspanle.Controls.Add(b);
+
         }
     }
 }

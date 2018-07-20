@@ -51,7 +51,7 @@ namespace Facebook
                 pass_in.Text = "Password";
             }
         }
-
+        public static string userName;
         private void button1_Click(object sender, EventArgs e)
         {
             Account user=new Account();
@@ -70,7 +70,9 @@ namespace Facebook
                 if (count == 1)     //if username or email and password are correct (count is the return of "Check_account" method in Account class)
                 {
                     Homepage f2 = new Homepage();
+                    userName = user_in.Text;
                     f2.Show();
+                    f2.WindowState = FormWindowState.Normal;
                     ParentForm.Hide();
                 }
                 else

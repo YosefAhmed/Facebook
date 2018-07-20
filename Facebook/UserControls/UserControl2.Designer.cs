@@ -41,7 +41,7 @@
             this.male = new System.Windows.Forms.RadioButton();
             this.female = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.fullname_up = new ZBobb.AlphaBlendTextBox();
+            this.firstname_up = new ZBobb.AlphaBlendTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.month = new System.Windows.Forms.ComboBox();
             this.year = new System.Windows.Forms.ComboBox();
@@ -49,6 +49,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.SecondNametxt = new ZBobb.AlphaBlendTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -128,9 +129,8 @@
             this.username_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username_up.ForeColor = System.Drawing.Color.Silver;
             this.username_up.Location = new System.Drawing.Point(40, 67);
-            this.username_up.Multiline = true;
             this.username_up.Name = "username_up";
-            this.username_up.Size = new System.Drawing.Size(278, 26);
+            this.username_up.Size = new System.Drawing.Size(278, 25);
             this.username_up.TabIndex = 17;
             this.username_up.Text = "Username or Email";
             this.username_up.Enter += new System.EventHandler(this.alphaBlendTextBox1_Enter);
@@ -143,9 +143,8 @@
             this.pass_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass_up.ForeColor = System.Drawing.Color.Silver;
             this.pass_up.Location = new System.Drawing.Point(40, 101);
-            this.pass_up.Multiline = true;
             this.pass_up.Name = "pass_up";
-            this.pass_up.Size = new System.Drawing.Size(278, 26);
+            this.pass_up.Size = new System.Drawing.Size(278, 25);
             this.pass_up.TabIndex = 18;
             this.pass_up.Text = "New Password";
             this.pass_up.Enter += new System.EventHandler(this.alphaBlendTextBox2_Enter);
@@ -195,20 +194,20 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Date of birth :";
             // 
-            // fullname_up
+            // firstname_up
             // 
-            this.fullname_up.BackAlpha = 10;
-            this.fullname_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.fullname_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fullname_up.ForeColor = System.Drawing.Color.Silver;
-            this.fullname_up.Location = new System.Drawing.Point(40, 35);
-            this.fullname_up.Multiline = true;
-            this.fullname_up.Name = "fullname_up";
-            this.fullname_up.Size = new System.Drawing.Size(278, 26);
-            this.fullname_up.TabIndex = 30;
-            this.fullname_up.Text = "Full Name";
-            this.fullname_up.Enter += new System.EventHandler(this.alphaBlendTextBox3_Enter);
-            this.fullname_up.Leave += new System.EventHandler(this.alphaBlendTextBox3_Leave);
+            this.firstname_up.BackAlpha = 10;
+            this.firstname_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.firstname_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstname_up.ForeColor = System.Drawing.Color.Silver;
+            this.firstname_up.Location = new System.Drawing.Point(41, 35);
+            this.firstname_up.Name = "firstname_up";
+            this.firstname_up.Size = new System.Drawing.Size(90, 25);
+            this.firstname_up.TabIndex = 30;
+            this.firstname_up.Text = "First Name";
+            this.firstname_up.TextChanged += new System.EventHandler(this.fullname_up_TextChanged);
+            this.firstname_up.Enter += new System.EventHandler(this.alphaBlendTextBox3_Enter);
+            this.firstname_up.Leave += new System.EventHandler(this.alphaBlendTextBox3_Leave);
             // 
             // pictureBox1
             // 
@@ -407,18 +406,34 @@
             this.label6.TabIndex = 37;
             this.label6.Text = "Year";
             // 
+            // SecondNametxt
+            // 
+            this.SecondNametxt.BackAlpha = 10;
+            this.SecondNametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SecondNametxt.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondNametxt.ForeColor = System.Drawing.Color.Silver;
+            this.SecondNametxt.Location = new System.Drawing.Point(137, 35);
+            this.SecondNametxt.Name = "SecondNametxt";
+            this.SecondNametxt.Size = new System.Drawing.Size(181, 25);
+            this.SecondNametxt.TabIndex = 38;
+            this.SecondNametxt.Text = "Second Name";
+            this.SecondNametxt.TextChanged += new System.EventHandler(this.alphaBlendTextBox1_TextChanged);
+            this.SecondNametxt.Enter += new System.EventHandler(this.SecondNametxt_Enter);
+            this.SecondNametxt.Leave += new System.EventHandler(this.SecondNametxt_Leave);
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.SecondNametxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.day);
             this.Controls.Add(this.year);
             this.Controls.Add(this.month);
-            this.Controls.Add(this.fullname_up);
+            this.Controls.Add(this.firstname_up);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.female);
@@ -434,6 +449,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(325, 218);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -457,7 +473,7 @@
         private System.Windows.Forms.RadioButton male;
         private System.Windows.Forms.RadioButton female;
         private System.Windows.Forms.Label label3;
-        private ZBobb.AlphaBlendTextBox fullname_up;
+        private ZBobb.AlphaBlendTextBox firstname_up;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox month;
         private System.Windows.Forms.ComboBox year;
@@ -465,5 +481,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private ZBobb.AlphaBlendTextBox SecondNametxt;
     }
 }

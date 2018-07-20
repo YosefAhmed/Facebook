@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Facebook</RootNamespace>
     <AssemblyName>Facebook</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -57,6 +57,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="post.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="post.Designer.cs">
+      <DependentUpon>post.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_friend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search_friend.Designer.cs">
+      <DependentUpon>Search_friend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_List.Designer.cs">
+      <DependentUpon>Search_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\cover profile photo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +137,15 @@
     <Compile Include="UserControls\Write post.Designer.cs">
       <DependentUpon>Write post.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="post.resx">
+      <DependentUpon>post.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_friend.resx">
+      <DependentUpon>Search_friend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_List.resx">
+      <DependentUpon>Search_List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\cover profile photo.resx">
       <DependentUpon>cover profile photo.cs</DependentUpon>
     </EmbeddedResource>

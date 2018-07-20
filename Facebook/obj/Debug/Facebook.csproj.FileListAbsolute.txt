@@ -66,19 +66,61 @@ D:\programming\visual studio\GUI\C#\Facebook-mo\Facebook\obj\Debug\Facebook.User
 D:\programming\visual studio\GUI\C#\Facebook-mo\Facebook\obj\Debug\Facebook.Write_post_in_profil.resources
 D:\programming\visual studio\GUI\C#\Facebook-mo\Facebook\obj\Debug\Facebook.Write_post.resources
 D:\programming\visual studio\GUI\C#\Facebook-mo\Facebook\obj\Debug\Facebook.csproj.GenerateResource.Cache
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\bin\Debug\Facebook.exe.config
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\bin\Debug\Facebook.exe
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\bin\Debug\Facebook.pdb
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.cover_profile_photo.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.Form1.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.profilepage.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.Homepage.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.Properties.Resources.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.UserControls.chat.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.Resources.UserControl2.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.UserControl1.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.Write_post_in_profil.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.Write_post.resources
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.csproj.GenerateResource.Cache
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.exe
-C:\Users\Yousef\Downloads\New folder (2)\Facebook-master\Facebook\obj\Debug\Facebook.pdb
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\bin\Debug\Facebook.exe.config
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.exe
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.pdb
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\bin\Debug\Facebook.exe
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\bin\Debug\Facebook.pdb
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.cover_profile_photo.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.Form1.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.profilepage.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.Homepage.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.Properties.Resources.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.UserControls.chat.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.Resources.UserControl2.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.UserControl1.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.Write_post_in_profil.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.Write_post.resources
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.csproj.GenerateResource.Cache
+C:\Users\lenovo\Downloads\compressed\Facebook-master\Facebook\obj\Debug\Facebook.post.resources
+F:\Facebook-master\Facebook\bin\Debug\Facebook.exe.config
+F:\Facebook-master\Facebook\obj\Debug\Facebook.exe
+F:\Facebook-master\Facebook\obj\Debug\Facebook.pdb
+F:\Facebook-master\Facebook\bin\Debug\Facebook.exe
+F:\Facebook-master\Facebook\bin\Debug\Facebook.pdb
+F:\Facebook-master\Facebook\obj\Debug\Facebook.post.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.cover_profile_photo.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Form1.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.profilepage.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Homepage.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Properties.Resources.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.UserControls.chat.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Resources.UserControl2.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.UserControl1.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Write_post_in_profil.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Write_post.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.csproj.GenerateResource.Cache
+F:\Facebook-master\Facebook\obj\Debug\Facebook.csprojResolveAssemblyReference.cache
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Search_friend.resources
+F:\Facebook-master\Facebook\obj\Debug\Facebook.Search_List.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\bin\Debug\Facebook.exe.config
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.exe
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.pdb
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\bin\Debug\Facebook.exe
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\bin\Debug\Facebook.pdb
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.csprojResolveAssemblyReference.cache
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.post.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Search_friend.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Search_List.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.cover_profile_photo.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Form1.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.profilepage.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Homepage.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Properties.Resources.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.UserControls.chat.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Resources.UserControl2.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.UserControl1.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Write_post_in_profil.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.Write_post.resources
+C:\Users\Yousef\Downloads\Facebook-master\Facebook\obj\Debug\Facebook.csproj.GenerateResource.Cache

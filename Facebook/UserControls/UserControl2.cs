@@ -25,7 +25,7 @@ namespace Facebook.Resources
             Account user = new Account();//creating object from account class
 
             //if one or more of data is Empty throw an Error msg
-            if (username_up.Text == "Email" || pass_up.Text == "New Password" || fullname_up.Text == "Full Name" || day.Text == "Day" || month.Text == "Month" || year.Text == "Year" || (male.Checked == false && female.Checked == false) )
+            if (username_up.Text == "Email" || pass_up.Text == "New Password" || firstname_up.Text == "Full Name" || day.Text == "Day" || month.Text == "Month" || year.Text == "Year" || (male.Checked == false && female.Checked == false)||SecondNametxt.Text=="Second Name" )
             {
                 MessageBox.Show("Please enter all information", "Error to Sign up", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -63,7 +63,8 @@ namespace Facebook.Resources
 //*-------------------------------------------------------------------------------------------------------------------
                 /*==========Fill user (object) data===========*/
 
-                user.Full_name = fullname_up.Text;
+                user.First_name = firstname_up.Text;
+                user.Second_Name = SecondNametxt.Text;
                 user.Username = username_up.Text.Trim();
                 user.Password = pass_up.Text.Trim();
                 user.Gender = gender;
@@ -79,7 +80,8 @@ namespace Facebook.Resources
                 {
                     try     //what i wont to do
                     {
-                        user.Full_name = fullname_up.Text;
+                        user.First_name = firstname_up.Text;
+                        user.Second_Name = SecondNametxt.Text;
                         user.Username = username_up.Text.Trim();
                         user.Password = pass_up.Text.Trim();
                         user.Gender = gender;
@@ -109,9 +111,9 @@ namespace Facebook.Resources
                        }
                         
                     }
-                    catch       //what will happen if there is a run time error,instade of stopping the application
+                    catch(Exception ex)       //what will happen if there is a run time error,instade of stopping the application
                     {
-                        MessageBox.Show("Error occured! Please fill your data accurately ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error occured! Please fill your data accurately "+ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally    //what will happen after "try" or "catch"
                     {
@@ -123,17 +125,17 @@ namespace Facebook.Resources
                             //Full Name textbox
         private void alphaBlendTextBox3_Enter(object sender, EventArgs e)
         {
-            fullname_up.ForeColor = Color.Black;
-            if (fullname_up.Text == "Full Name")
-                fullname_up.Text = "";
+            firstname_up.ForeColor = Color.Black;
+            if (firstname_up.Text == "First Name")
+                firstname_up.Text = "";
         }
                             //Full Name textbox
         private void alphaBlendTextBox3_Leave(object sender, EventArgs e)
         {
-            if (fullname_up.Text == "")
+            if (firstname_up.Text == "")
             {
-                fullname_up.ForeColor = Color.Silver;
-                fullname_up.Text = "Full Name";
+                firstname_up.ForeColor = Color.Silver;
+                firstname_up.Text = "First Name";
             }
         }
                             //Username or email textbox
@@ -234,6 +236,40 @@ namespace Facebook.Resources
         private void year_DropDown(object sender, EventArgs e)
         {
             label6.Hide();
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fullname_up_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void alphaBlendTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SecondNametxt_Enter(object sender, EventArgs e)
+        {
+            SecondNametxt.ForeColor = Color.Black;
+            if (SecondNametxt.Text == "Second Name")
+            {
+                SecondNametxt.Text = "";
+               
+            }
+        }
+
+        private void SecondNametxt_Leave(object sender, EventArgs e)
+        {
+            if (SecondNametxt.Text == "")
+            {
+                SecondNametxt.ForeColor = Color.Silver;
+                SecondNametxt.Text = "Second Name";
+            }
         }
 
 

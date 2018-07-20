@@ -11,10 +11,11 @@ namespace Facebook
 {
     class Account
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
+        public static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
         SqlCommand cmd;
 
-        public String Full_name { get; set; }
+        public String First_name { get; set; }
+        public String Second_Name { get; set; }
         public String Username { get; set; }
         public String Password { get; set; }
         public String Gender { get; set; }
@@ -23,10 +24,12 @@ namespace Facebook
 
         public String Insert_Data()//inserts data in database(returns a success msg)
         {
-            cmd = new SqlCommand("insert into Reg_DB(Name,UsernameOrEmail,Password,Gender,DateOfBirth) values('" + Full_name + "','" + Username+ "','" + Password+ "','" + Gender + "','" + birthday+ "')", con);
+            cmd = new SqlCommand("insert into Reg_DB(First_Name,Second_Name,UsernameOrEmail,Password,Gender,DateOfBirth) values('" + First_name + "','" + Second_Name + "','" + Username + "','" + Password + "','" + Gender + "','" + birthday + "')", con);
                         con.Open();
                         cmd.ExecuteNonQuery();
-                     return   "You have been registered successfully! Now you can sign in.";                 
+                        con.Close();
+
+                     return   "You have been registered successfully! Now you can sign in.";
         }
 
         public int Check_existing_data()//checks  if username or Email is allready existed or no !(returns integer)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Facebook
 {
@@ -20,15 +21,13 @@ namespace Facebook
             InitializeComponent();
             
         }
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
+
+        public static string search_for_friend;
 
         
         
-
-
-
- 
-
-
+        
         private void titlepar_MouseDown(object sender, MouseEventArgs e)
         {
             togmove = 1;
@@ -88,7 +87,17 @@ namespace Facebook
         {
             togmover = 0;
         }
-
+        int x,y;
+        public int fny()
+        {
+            y = panel3.Size.Height + panel3.Location.Y;
+            return y;
+        }
+        public int fnx()
+        {
+            x = panel3.Location.X;
+            return x;
+        }
 
         public void aperancemax()//for maximize 
         {
@@ -102,12 +111,18 @@ namespace Facebook
             notificationbtn.Left = 1025;
             settingsbtn.Left = 1075;
             searchtxt.Left = 250;
+            tableLayoutPanel5.Top = 500;
+            //posts_place.Top = 500;
+            //posts_place.Size = new Size(500, 500);
+            //panel3.Size = new Size(1500,150);
+            //textBox1.Size = new Size(1500, 150);
+            //panel4.Size = new Size(1500, 32);
+            //posts_place.Size = new Size(1,);
             this.searchtxt.Size = new Size(435, 20);
             searchbtn.Left = 657;
+
             homebtn.Location = new Point(845, 11);
             profilepicpanel.Location = new Point(735, 11);
-            this.cover_profile_photo1.Size = new Size(915, 281);
-            this.write_post_in_profil1.Size = new Size(604,165);
         }
         public void aperancenormal()//for normalize
         {
@@ -125,7 +140,7 @@ namespace Facebook
             searchbtn.Location = new Point(371, 11);
             homebtn.Location = new Point(553, 11);
             profilepicpanel.Location = new Point(447, 11);
-            this.write_post_in_profil1.Size = new Size(413, 144);            
+            
         }
 
 
@@ -133,6 +148,7 @@ namespace Facebook
         {
             //WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
             aperancemax();
+            profilebtn.Text = cover_profile_photo.fullName;
         }
 
              
@@ -169,10 +185,39 @@ namespace Facebook
             }
 
         }
-       private void minimizebtn_Click(object sender, EventArgs e)
+
+        private void postbtn_Click(object sender, EventArgs e)
+        {
+            //posts_place.Controls.Add(NewUC(textBox1.Text));
+            //MessageBox.Show(" X: " + Convert.ToString(posts_place.Location.X) + " Y: " + Convert.ToString(posts_place.Location.Y));
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+            //System.Windows.Forms.FlowLayoutPanel FL = new System.Windows.Forms.FlowLayoutPanel();
+            //tableLayoutPanel5.Controls.Add(FL);
+        }
+
+        private void minimizebtn_Click(object sender, EventArgs e)
        {
            WindowState = FormWindowState.Minimized;
        }
+        int positionY = 0;
+        public Facebook.post NewUC(string text)
+        {
+            Facebook.post UC = new Facebook.post();
+            UC.labeling(text);
+            //UC.sizing(UC.Y_loc());
+            //this.Controls.Add(UC);
+            UC.Top = panel3.Location.Y + panel3.Size.Height;
+            UC.Left = panel3.Location.X;
+            if(positionY == 0)
+            {
+                positionY += UC.Top;
+            }
+            positionY = (UC.Size.Height);
+            return UC;
+        }
 
        private void homebtn_Click(object sender, EventArgs e)
        {
@@ -181,20 +226,56 @@ namespace Facebook
            this.Close();
        }
 
-       private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+       private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
        {
 
        }
+       //public string fname2;
+       //public string sname2;
+       //public string allname2;
+       //List<String> names = new List<string>(); 
 
-       private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+       private void searchbtn_Click(object sender, EventArgs e)
        {
+           Search_List search = new Search_List();
+           
+           search_for_friend = searchtxt.Text;
+           
 
+           //try
+           //{
+           //SqlCommand cmd = new SqlCommand("Select First_Name,Second_Name from Reg_DB where First_Name='" + searchtxt.Text + "'", con);
+           //con.Open();
+           //SqlDataReader dr = cmd.ExecuteReader();
+
+           //while (dr.Read())
+           //{
+           //    fname2 = dr["First_Name"].ToString();
+           //    sname2 = dr["Second_Name"].ToString();
+           //    while (fname2 == null || sname2 == null)
+           //    {
+           //        break;
+           //    }
+           //    allname2 = fname2 + " " + sname2;
+           //    names.Add(allname2);
+           //    search_for_friend = allname2;
+
+           //}
+           //dr.Close();
+           //con.Close();
+
+
+            search.Show();
+           //catch (Exception ex)
+           //{ MessageBox.Show(ex.Message); }
+           
+             
+           
        }
 
-       private void postbtn_Click(object sender, EventArgs e)
+       private void cover_profile_photo1_Load(object sender, EventArgs e)
        {
-           Button b = new Button();
-           flowLayoutPanel1.Controls.Add(b);
+
        }
 
 
