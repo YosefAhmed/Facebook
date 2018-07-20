@@ -16,18 +16,53 @@ namespace Facebook
         int mvalx;
         int mvaly;
         int togmove;
+        int id;
         public profilepage()
         {
             InitializeComponent();
-            
+
+            try
+            {
+
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
+                con.Open();
+                SqlCommand cmd3 = new SqlCommand("select MAX(postID) from posts where userId ='" + UserControl1.firstName + "'", con);
+                id = (int)cmd3.ExecuteScalar();
+                con.Close();
+                string react;
+                for (int i = 1; i <= id; i++)
+                {
+                    con.Open();
+                    SqlCommand cmd2 = new SqlCommand("select text from posts where postID =" + i + "AND userId = '" + UserControl1.firstName + "'", con);
+                    string query = (string)cmd2.ExecuteScalar();
+                    try
+                    {
+                        SqlCommand cmd4 = new SqlCommand("select react from reacts where postID = '" + i.ToString() + "'" + "AND userName = '" + UserControl1.firstName + "'", con);
+                        react = (string)cmd4.ExecuteScalar();
+                    }
+                    catch (Exception ex)
+                    {
+                        react = "None";
+                    }
+                    posts_place.Controls.Add(NewUC_upload(query, react));
+                    con.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
         }
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
-
-        public static string search_for_friend;
 
         
         
-        
+
+
+
+ 
+
+
         private void titlepar_MouseDown(object sender, MouseEventArgs e)
         {
             togmove = 1;
@@ -48,7 +83,7 @@ namespace Facebook
             }
         }
 
-
+        
        
 
 
@@ -87,17 +122,7 @@ namespace Facebook
         {
             togmover = 0;
         }
-        int x,y;
-        public int fny()
-        {
-            y = panel3.Size.Height + panel3.Location.Y;
-            return y;
-        }
-        public int fnx()
-        {
-            x = panel3.Location.X;
-            return x;
-        }
+
 
         public void aperancemax()//for maximize 
         {
@@ -111,13 +136,7 @@ namespace Facebook
             notificationbtn.Left = 1025;
             settingsbtn.Left = 1075;
             searchtxt.Left = 250;
-            tableLayoutPanel5.Top = 500;
-            //posts_place.Top = 500;
-            //posts_place.Size = new Size(500, 500);
-            //panel3.Size = new Size(1500,150);
-            //textBox1.Size = new Size(1500, 150);
-            //panel4.Size = new Size(1500, 32);
-            //posts_place.Size = new Size(1,);
+            posts_place.Size = new Size(520, 1500);
             this.searchtxt.Size = new Size(435, 20);
             searchbtn.Left = 657;
 
@@ -146,9 +165,8 @@ namespace Facebook
 
         private void profilepage_Load(object sender, EventArgs e)
         {
-            //WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
             aperancemax();
-            profilebtn.Text = cover_profile_photo.fullName;
+            profilebtn.Text = UserControl1.FName;
         }
 
              
@@ -185,98 +203,72 @@ namespace Facebook
             }
 
         }
-
-        private void postbtn_Click(object sender, EventArgs e)
-        {
-            //posts_place.Controls.Add(NewUC(textBox1.Text));
-            //MessageBox.Show(" X: " + Convert.ToString(posts_place.Location.X) + " Y: " + Convert.ToString(posts_place.Location.Y));
-        }
-
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
-            //System.Windows.Forms.FlowLayoutPanel FL = new System.Windows.Forms.FlowLayoutPanel();
-            //tableLayoutPanel5.Controls.Add(FL);
-        }
-
-        private void minimizebtn_Click(object sender, EventArgs e)
+       private void minimizebtn_Click(object sender, EventArgs e)
        {
            WindowState = FormWindowState.Minimized;
        }
+
         int positionY = 0;
-        public Facebook.post NewUC(string text)
+        public Facebook.posts NewUC(string text)
         {
-            Facebook.post UC = new Facebook.post();
+            Facebook.posts UC = new Facebook.posts();
             UC.labeling(text);
-            //UC.sizing(UC.Y_loc());
-            //this.Controls.Add(UC);
-            UC.Top = panel3.Location.Y + panel3.Size.Height;
-            UC.Left = panel3.Location.X;
-            if(positionY == 0)
+            if (positionY == 0)
             {
-                positionY += UC.Top;
+                // MessageBox.Show(Convert.ToString(positionY));
+                positionY = panel4.Location.Y + 32 + 5;
             }
-            positionY = (UC.Size.Height);
+            UC.Top = positionY;
+            UC.Left = panel4.Location.X;
+            positionY = (UC.Size.Height) + 5;
             return UC;
         }
 
-       private void homebtn_Click(object sender, EventArgs e)
+        private void postbtn_Click(object sender, EventArgs e)
+        {
+            posts_place.Controls.Add(NewUC(posttxt.Text));
+        }
+
+        private void cover_profile_photo1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public Facebook.posts NewUC_upload(string text, string reaction)
+        {
+            Facebook.posts UC = new Facebook.posts();
+            UC.labeling_upload(text);
+            if (reaction != "None")
+            {
+                UC.reacting(reaction);
+            }
+            else
+            {
+                reaction = "Like";
+                UC.reacting(reaction);
+            }
+            if (positionY == 0)
+            {
+                // MessageBox.Show(Convert.ToString(positionY));
+                positionY = panel4.Location.Y + 32 + 5;
+            }
+            UC.Top = positionY;
+            UC.Left = panel4.Location.X;
+            positionY = (UC.Size.Height) + 5;
+            return UC;
+        }
+
+        private void homebtn_Click(object sender, EventArgs e)
        {
            Homepage H = new Homepage();
            H.Show();
            this.Close();
        }
 
-       private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-       {
+        private void posttxt_TextChanged(object sender, EventArgs e)
+        {
 
-       }
-       //public string fname2;
-       //public string sname2;
-       //public string allname2;
-       //List<String> names = new List<string>(); 
-
-       private void searchbtn_Click(object sender, EventArgs e)
-       {
-           Search_List search = new Search_List();
-           
-           search_for_friend = searchtxt.Text;
-           
-
-           //try
-           //{
-           //SqlCommand cmd = new SqlCommand("Select First_Name,Second_Name from Reg_DB where First_Name='" + searchtxt.Text + "'", con);
-           //con.Open();
-           //SqlDataReader dr = cmd.ExecuteReader();
-
-           //while (dr.Read())
-           //{
-           //    fname2 = dr["First_Name"].ToString();
-           //    sname2 = dr["Second_Name"].ToString();
-           //    while (fname2 == null || sname2 == null)
-           //    {
-           //        break;
-           //    }
-           //    allname2 = fname2 + " " + sname2;
-           //    names.Add(allname2);
-           //    search_for_friend = allname2;
-
-           //}
-           //dr.Close();
-           //con.Close();
-
-
-            search.Show();
-           //catch (Exception ex)
-           //{ MessageBox.Show(ex.Message); }
-           
-             
-           
-       }
-
-       private void cover_profile_photo1_Load(object sender, EventArgs e)
-       {
-
-       }
+        }
 
 
 

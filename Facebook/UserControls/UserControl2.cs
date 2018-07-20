@@ -25,7 +25,7 @@ namespace Facebook.Resources
             Account user = new Account();//creating object from account class
 
             //if one or more of data is Empty throw an Error msg
-            if (username_up.Text == "Email" || pass_up.Text == "New Password" || firstname_up.Text == "Full Name" || day.Text == "Day" || month.Text == "Month" || year.Text == "Year" || (male.Checked == false && female.Checked == false)||SecondNametxt.Text=="Second Name" )
+            if (username_up.Text == "Email" || pass_up.Text == "New Password" || firstname_up.Text == "First Name"||secondname_Up.Text=="Second Name" || day.Text == "Day" || month.Text == "Month" || year.Text == "Year" || (male.Checked == false && female.Checked == false) )
             {
                 MessageBox.Show("Please enter all information", "Error to Sign up", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -64,7 +64,7 @@ namespace Facebook.Resources
                 /*==========Fill user (object) data===========*/
 
                 user.First_name = firstname_up.Text;
-                user.Second_Name = SecondNametxt.Text;
+                user.Second_name = secondname_Up.Text;
                 user.Username = username_up.Text.Trim();
                 user.Password = pass_up.Text.Trim();
                 user.Gender = gender;
@@ -81,7 +81,6 @@ namespace Facebook.Resources
                     try     //what i wont to do
                     {
                         user.First_name = firstname_up.Text;
-                        user.Second_Name = SecondNametxt.Text;
                         user.Username = username_up.Text.Trim();
                         user.Password = pass_up.Text.Trim();
                         user.Gender = gender;
@@ -111,9 +110,9 @@ namespace Facebook.Resources
                        }
                         
                     }
-                    catch(Exception ex)       //what will happen if there is a run time error,instade of stopping the application
+                    catch       //what will happen if there is a run time error,instade of stopping the application
                     {
-                        MessageBox.Show("Error occured! Please fill your data accurately "+ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error occured! Please fill your data accurately ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally    //what will happen after "try" or "catch"
                     {
@@ -233,43 +232,30 @@ namespace Facebook.Resources
             label5.Hide();
         }
 
+        private void secondname_Up_Enter(object sender, EventArgs e)
+        {
+            secondname_Up.ForeColor = Color.Black;
+            if (secondname_Up.Text == "Second Name")
+                secondname_Up.Text = "";
+        }
+
+        private void firstname_up_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondname_Up_Leave(object sender, EventArgs e)
+        {
+            if (secondname_Up.Text == "")
+            {
+                secondname_Up.ForeColor = Color.Silver;
+                secondname_Up.Text = "Second Name";
+            }
+        }
+
         private void year_DropDown(object sender, EventArgs e)
         {
             label6.Hide();
-        }
-
-        private void UserControl2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fullname_up_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void alphaBlendTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SecondNametxt_Enter(object sender, EventArgs e)
-        {
-            SecondNametxt.ForeColor = Color.Black;
-            if (SecondNametxt.Text == "Second Name")
-            {
-                SecondNametxt.Text = "";
-               
-            }
-        }
-
-        private void SecondNametxt_Leave(object sender, EventArgs e)
-        {
-            if (SecondNametxt.Text == "")
-            {
-                SecondNametxt.ForeColor = Color.Silver;
-                SecondNametxt.Text = "Second Name";
-            }
         }
 
 

@@ -33,7 +33,6 @@
             this.uploadprofilebtn = new System.Windows.Forms.Button();
             this.profilepic = new System.Windows.Forms.PictureBox();
             this.coverimage = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.profilepic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coverimage)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +55,7 @@
             this.uploadcoverbtn.BackgroundImage = global::Facebook.Properties.Resources.up_icon;
             this.uploadcoverbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.uploadcoverbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uploadcoverbtn.Location = new System.Drawing.Point(603, 158);
+            this.uploadcoverbtn.Location = new System.Drawing.Point(607, 162);
             this.uploadcoverbtn.Name = "uploadcoverbtn";
             this.uploadcoverbtn.Size = new System.Drawing.Size(25, 23);
             this.uploadcoverbtn.TabIndex = 26;
@@ -88,7 +87,6 @@
             this.profilepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilepic.TabIndex = 23;
             this.profilepic.TabStop = false;
-            this.profilepic.Click += new System.EventHandler(this.profilepic_Click);
             // 
             // coverimage
             // 
@@ -103,21 +101,10 @@
             this.coverimage.TabIndex = 22;
             this.coverimage.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(473, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 23);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Save changes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // cover_profile_photo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.uploadcoverbtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.uploadprofilebtn);
@@ -140,6 +127,5 @@
         private System.Windows.Forms.Button uploadprofilebtn;
         private System.Windows.Forms.PictureBox profilepic;
         private System.Windows.Forms.PictureBox coverimage;
-        private System.Windows.Forms.Button button1;
     }
 }

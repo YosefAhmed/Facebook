@@ -49,7 +49,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.SecondNametxt = new ZBobb.AlphaBlendTextBox();
+            this.secondname_Up = new ZBobb.AlphaBlendTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -200,12 +200,12 @@
             this.firstname_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.firstname_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstname_up.ForeColor = System.Drawing.Color.Silver;
-            this.firstname_up.Location = new System.Drawing.Point(41, 35);
+            this.firstname_up.Location = new System.Drawing.Point(40, 35);
             this.firstname_up.Name = "firstname_up";
-            this.firstname_up.Size = new System.Drawing.Size(90, 25);
+            this.firstname_up.Size = new System.Drawing.Size(91, 25);
             this.firstname_up.TabIndex = 30;
             this.firstname_up.Text = "First Name";
-            this.firstname_up.TextChanged += new System.EventHandler(this.fullname_up_TextChanged);
+            this.firstname_up.TextChanged += new System.EventHandler(this.firstname_up_TextChanged);
             this.firstname_up.Enter += new System.EventHandler(this.alphaBlendTextBox3_Enter);
             this.firstname_up.Leave += new System.EventHandler(this.alphaBlendTextBox3_Leave);
             // 
@@ -406,27 +406,26 @@
             this.label6.TabIndex = 37;
             this.label6.Text = "Year";
             // 
-            // SecondNametxt
+            // secondname_Up
             // 
-            this.SecondNametxt.BackAlpha = 10;
-            this.SecondNametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SecondNametxt.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondNametxt.ForeColor = System.Drawing.Color.Silver;
-            this.SecondNametxt.Location = new System.Drawing.Point(137, 35);
-            this.SecondNametxt.Name = "SecondNametxt";
-            this.SecondNametxt.Size = new System.Drawing.Size(181, 25);
-            this.SecondNametxt.TabIndex = 38;
-            this.SecondNametxt.Text = "Second Name";
-            this.SecondNametxt.TextChanged += new System.EventHandler(this.alphaBlendTextBox1_TextChanged);
-            this.SecondNametxt.Enter += new System.EventHandler(this.SecondNametxt_Enter);
-            this.SecondNametxt.Leave += new System.EventHandler(this.SecondNametxt_Leave);
+            this.secondname_Up.BackAlpha = 10;
+            this.secondname_Up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.secondname_Up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondname_Up.ForeColor = System.Drawing.Color.Silver;
+            this.secondname_Up.Location = new System.Drawing.Point(135, 35);
+            this.secondname_Up.Name = "secondname_Up";
+            this.secondname_Up.Size = new System.Drawing.Size(183, 25);
+            this.secondname_Up.TabIndex = 38;
+            this.secondname_Up.Text = "Second Name";
+            this.secondname_Up.Enter += new System.EventHandler(this.secondname_Up_Enter);
+            this.secondname_Up.Leave += new System.EventHandler(this.secondname_Up_Leave);
             // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.SecondNametxt);
+            this.Controls.Add(this.secondname_Up);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -449,7 +448,6 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(325, 218);
-            this.Load += new System.EventHandler(this.UserControl2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -481,6 +479,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private ZBobb.AlphaBlendTextBox SecondNametxt;
+        private ZBobb.AlphaBlendTextBox secondname_Up;
     }
 }

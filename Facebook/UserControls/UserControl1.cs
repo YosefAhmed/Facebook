@@ -51,7 +51,9 @@ namespace Facebook
                 pass_in.Text = "Password";
             }
         }
-        public static string userName;
+
+        public static string firstName , FName , profileimg , coverimg;
+
         private void button1_Click(object sender, EventArgs e)
         {
             Account user=new Account();
@@ -67,12 +69,15 @@ namespace Facebook
                 user.Password = pass_in.Text.Trim();
 
                 int count =user.Check_account();
+               
                 if (count == 1)     //if username or email and password are correct (count is the return of "Check_account" method in Account class)
                 {
                     Homepage f2 = new Homepage();
-                    userName = user_in.Text;
+                    firstName = user_in.Text;
+                    FName = user.get_FirstName();
+            //       profileimg = user.get_profileimg();
+             //       coverimg = user.get_coverimg();
                     f2.Show();
-                    f2.WindowState = FormWindowState.Normal;
                     ParentForm.Hide();
                 }
                 else

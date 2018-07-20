@@ -54,13 +54,13 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.newspanle = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.write_post1 = new Facebook.Write_post();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.chat1 = new Facebook.UserControls.chat();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.write_post1 = new Facebook.Write_post();
-            this.chat1 = new Facebook.UserControls.chat();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -121,7 +121,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(850, 0);
+            this.button4.Location = new System.Drawing.Point(842, 0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(27, 27);
             this.button4.TabIndex = 6;
@@ -140,7 +140,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(823, 0);
+            this.button3.Location = new System.Drawing.Point(815, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(27, 27);
             this.button3.TabIndex = 6;
@@ -161,7 +161,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 27);
+            this.panel1.Size = new System.Drawing.Size(896, 27);
             this.panel1.TabIndex = 3;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlepar_MouseDown_1);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titlepar_MouseMove_1);
@@ -178,7 +178,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(877, 0);
+            this.button1.Location = new System.Drawing.Point(869, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(27, 27);
             this.button1.TabIndex = 4;
@@ -212,8 +212,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(904, 45);
+            this.panel2.Size = new System.Drawing.Size(896, 45);
             this.panel2.TabIndex = 6;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // profilepicpanel
             // 
@@ -392,7 +393,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 460F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(821, 494);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(813, 460);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -410,7 +411,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.65934F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.34066F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(571, 488);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(565, 454);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // newspanle
@@ -420,9 +421,9 @@
             this.bunifuTransition1.SetDecoration(this.newspanle, BunifuAnimatorNS.DecorationType.None);
             this.newspanle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.newspanle.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.newspanle.Location = new System.Drawing.Point(3, 201);
+            this.newspanle.Location = new System.Drawing.Point(3, 187);
             this.newspanle.Name = "newspanle";
-            this.newspanle.Size = new System.Drawing.Size(557, 284);
+            this.newspanle.Size = new System.Drawing.Size(551, 264);
             this.newspanle.TabIndex = 4;
             this.newspanle.WrapContents = false;
             // 
@@ -438,8 +439,18 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.13483F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.865169F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(557, 192);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(551, 178);
             this.tableLayoutPanel6.TabIndex = 5;
+            // 
+            // write_post1
+            // 
+            this.write_post1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.write_post1, BunifuAnimatorNS.DecorationType.None);
+            this.write_post1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.write_post1.Location = new System.Drawing.Point(3, 3);
+            this.write_post1.Name = "write_post1";
+            this.write_post1.Size = new System.Drawing.Size(545, 158);
+            this.write_post1.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
@@ -448,15 +459,25 @@
             this.tableLayoutPanel3.Controls.Add(this.chat1, 0, 1);
             this.bunifuTransition1.SetDecoration(this.tableLayoutPanel3, BunifuAnimatorNS.DecorationType.None);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(580, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(574, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.31718F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.68282F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(238, 488);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(236, 454);
             this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // chat1
+            // 
+            this.chat1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.chat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
+            this.bunifuTransition1.SetDecoration(this.chat1, BunifuAnimatorNS.DecorationType.None);
+            this.chat1.Location = new System.Drawing.Point(52, 68);
+            this.chat1.Name = "chat1";
+            this.chat1.Size = new System.Drawing.Size(181, 383);
+            this.chat1.TabIndex = 0;
             // 
             // tableLayoutPanel4
             // 
@@ -471,7 +492,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.91513F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.08487F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(910, 580);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(902, 542);
             this.tableLayoutPanel4.TabIndex = 7;
             // 
             // tableLayoutPanel5
@@ -482,14 +503,13 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel1, 1, 0);
             this.bunifuTransition1.SetDecoration(this.tableLayoutPanel5, BunifuAnimatorNS.DecorationType.None);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 77);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 73);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 466F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(904, 500);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(896, 466);
             this.tableLayoutPanel5.TabIndex = 0;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
             // panel3
             // 
@@ -499,28 +519,8 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(904, 68);
+            this.panel3.Size = new System.Drawing.Size(896, 64);
             this.panel3.TabIndex = 1;
-            // 
-            // write_post1
-            // 
-            this.write_post1.BackColor = System.Drawing.Color.White;
-            this.bunifuTransition1.SetDecoration(this.write_post1, BunifuAnimatorNS.DecorationType.None);
-            this.write_post1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.write_post1.Location = new System.Drawing.Point(3, 3);
-            this.write_post1.Name = "write_post1";
-            this.write_post1.Size = new System.Drawing.Size(551, 170);
-            this.write_post1.TabIndex = 0;
-            // 
-            // chat1
-            // 
-            this.chat1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.chat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
-            this.bunifuTransition1.SetDecoration(this.chat1, BunifuAnimatorNS.DecorationType.None);
-            this.chat1.Location = new System.Drawing.Point(54, 102);
-            this.chat1.Name = "chat1";
-            this.chat1.Size = new System.Drawing.Size(181, 383);
-            this.chat1.TabIndex = 0;
             // 
             // Homepage
             // 
@@ -528,7 +528,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(910, 580);
+            this.ClientSize = new System.Drawing.Size(902, 542);
             this.Controls.Add(this.tableLayoutPanel4);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
