@@ -66,6 +66,11 @@ namespace Facebook
             {
 
                 user.Username = user_in.Text.Trim();
+                if (pass_in.Text.Length < 5)
+                {
+                    MessageBox.Show("Password Must Be 5 Charachters At Least ! , Pleas Try Again ", "Invalid Password!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
                 user.Password = pass_in.Text.Trim();
 
                 int count =user.Check_account();

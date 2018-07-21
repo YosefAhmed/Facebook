@@ -66,9 +66,17 @@ namespace Facebook.Resources
                 user.First_name = firstname_up.Text;
                 user.Second_name = secondname_Up.Text;
                 user.Username = username_up.Text.Trim();
-                user.Password = pass_up.Text.Trim();
-                user.Gender = gender;
-                user.birthday = full_date;
+                if (pass_up.Text.Length < 5)
+                {
+                    MessageBox.Show("Password Must Be 5 Charachters At Least ! , Pleas Try Again ", "Invalid Password!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    user.Password = pass_up.Text.Trim();
+                    user.Gender = gender;
+                    user.birthday = full_date;
+                }
+               
 
  //----------------------------------------------------------------------------------------
                 int count = user.Check_existing_data();
@@ -91,22 +99,6 @@ namespace Facebook.Resources
                        if (result == DialogResult.OK)
                        {
                            this.Hide();    //hide UserControl2
-
-                           //fullname_up.ForeColor = Color.Silver;
-                           //fullname_up.Text = "Full Name";
-                           //username_up.ForeColor = Color.Silver;
-                           //username_up.Text = "Username or Email";
-                           //pass_up.ForeColor = Color.Silver;
-                           //pass_up.Text = "New Password";
-                           //pass_up.PasswordChar = '*';
-                           //day.ForeColor = Color.Silver;
-                           //label4.Show();
-                           //label5.Show();
-                           //label6.Show();
-                           //month.ForeColor = Color.Silver;
-                           //year.ForeColor = Color.Silver;
-                           //male.Checked = false;
-                           //female.Checked = false;
                        }
                         
                     }

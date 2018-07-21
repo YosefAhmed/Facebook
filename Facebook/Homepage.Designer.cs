@@ -214,7 +214,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(896, 45);
             this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // profilepicpanel
             // 
@@ -275,19 +274,22 @@
             // 
             // settingsbtn
             // 
+            this.settingsbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.settingsbtn.BackColor = System.Drawing.Color.Transparent;
-            this.settingsbtn.BackgroundImage = global::Facebook.Properties.Resources.settings1;
             this.settingsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.settingsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.settingsbtn, BunifuAnimatorNS.DecorationType.None);
             this.settingsbtn.FlatAppearance.BorderSize = 0;
             this.settingsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsbtn.Location = new System.Drawing.Point(822, 3);
+            this.settingsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.settingsbtn.ForeColor = System.Drawing.Color.White;
+            this.settingsbtn.Location = new System.Drawing.Point(816, 1);
             this.settingsbtn.Name = "settingsbtn";
-            this.settingsbtn.Size = new System.Drawing.Size(29, 40);
+            this.settingsbtn.Size = new System.Drawing.Size(70, 40);
             this.settingsbtn.TabIndex = 13;
+            this.settingsbtn.Text = "Sign Out";
             this.settingsbtn.UseVisualStyleBackColor = false;
+            this.settingsbtn.Click += new System.EventHandler(this.settingsbtn_Click);
             // 
             // friendsbtn
             // 

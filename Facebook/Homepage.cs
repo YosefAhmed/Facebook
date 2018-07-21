@@ -171,9 +171,11 @@ namespace Facebook
             this.Close();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void settingsbtn_Click(object sender, EventArgs e)
         {
-
+            Form1 F = new Form1();
+            F.Show();
+            this.Close();
         }
     }
 }

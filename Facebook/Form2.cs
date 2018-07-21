@@ -134,15 +134,14 @@ namespace Facebook
             friendsbtn.Left = 935;
             messagesbtn.Left = 985;
             notificationbtn.Left = 1025;
-            settingsbtn.Left = 1075;
+            signoutbtn.Left = 1075;
             searchtxt.Left = 250;
-            posts_place.Size = new Size(520, 1500);
             this.searchtxt.Size = new Size(435, 20);
             searchbtn.Left = 657;
-
             homebtn.Location = new Point(845, 11);
             profilepicpanel.Location = new Point(735, 11);
-        }
+            this.cover_profile_photo1.Size = new Size(915, 281);
+           }
         public void aperancenormal()//for normalize
         {
             WindowState = FormWindowState.Normal;
@@ -153,13 +152,12 @@ namespace Facebook
             friendsbtn.Location = new Point(663, 3);
             messagesbtn.Location = new Point(708, 3);
             notificationbtn.Location = new Point(747, 3);
-            settingsbtn.Location = new Point(822, 3);
+            signoutbtn.Location = new Point(822, 3);
             searchtxt.Location = new Point(83, 8);
             this.searchtxt.Size = new Size(317, 27);
             searchbtn.Location = new Point(371, 11);
             homebtn.Location = new Point(553, 11);
             profilepicpanel.Location = new Point(447, 11);
-            
         }
 
 
@@ -265,9 +263,12 @@ namespace Facebook
            this.Close();
        }
 
-        private void posttxt_TextChanged(object sender, EventArgs e)
-        {
 
+        private void signoutbtn_Click(object sender, EventArgs e)
+        {
+            Form1 F = new Form1();
+            F.Show();
+            this.Close();
         }
 
 

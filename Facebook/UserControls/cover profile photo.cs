@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Media;
 namespace Facebook
 {
     public partial class cover_profile_photo : UserControl
     {
+        private SoundPlayer Sound;
         public cover_profile_photo()
         {
-            InitializeComponent();
+             InitializeComponent();
+             Sound = new SoundPlayer("Pop-up.wav");
         }
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
         String imagelocation = ""; string imagelocation1 = "";
@@ -27,7 +30,7 @@ namespace Facebook
             try
             {
                 OpenFileDialog dialog2 = new OpenFileDialog();
-                dialog2.Filter = "jpg files(*.jpg)|*.jpg | PNG files(*.png)|*.png|All files(*.*)|*.*";
+                dialog2.Filter = "All files(*.*)| PNG files(*.png)|*.png|jpg files(*.jpg)|*.jpg |*.*";
                 if (dialog2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     imagelocation1 = dialog2.FileName;
 
@@ -55,7 +58,7 @@ namespace Facebook
             try
             {
                 OpenFileDialog dialog2 = new OpenFileDialog();
-                dialog2.Filter = "jpg files(*.jpg)|*.jpg | PNG files(*.png)|*.png|All files(*.*)|*.*";
+                dialog2.Filter = "All files(*.*)| PNG files(*.png)|*.png|jpg files(*.jpg)|*.jpg |*.*";
                 if (dialog2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     imagelocation = dialog2.FileName;
 
@@ -109,9 +112,10 @@ namespace Facebook
                 string dr3 = (string)cmd3.ExecuteScalar();
                 coverimage.Image = Image.FromFile(dr3);
             }
-            catch (Exception ex) { MessageBox.Show("You didn't Upload a Profile or a Cover Picture"); }
+            catch /*(Exception ex) */{ Sound.Play(); }
             con.Close();
         }
     }
+    
 }
 
