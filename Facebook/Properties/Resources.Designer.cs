@@ -83,6 +83,16 @@ namespace Facebook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chat_icon {
+            get {
+                object obj = ResourceManager.GetObject("Chat-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Emotes_face_smile_icon {
             get {
                 object obj = ResourceManager.GetObject("Emotes-face-smile-icon", resourceCulture);
@@ -293,6 +303,16 @@ namespace Facebook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sign_Stop_icon {
+            get {
+                object obj = ResourceManager.GetObject("Sign-Stop-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tag {
             get {
                 object obj = ResourceManager.GetObject("tag", resourceCulture);
@@ -316,6 +336,16 @@ namespace Facebook.Properties {
         internal static System.Drawing.Bitmap up_icon {
             get {
                 object obj = ResourceManager.GetObject("up-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_add_icon {
+            get {
+                object obj = ResourceManager.GetObject("user-add-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

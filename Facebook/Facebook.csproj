@@ -57,11 +57,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="comments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="comments.Designer.cs">
+      <DependentUpon>comments.cs</DependentUpon>
+    </Compile>
     <Compile Include="posts.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="posts.Designer.cs">
       <DependentUpon>posts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searching.Designer.cs">
+      <DependentUpon>searching.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\cover profile photo.cs">
       <SubType>UserControl</SubType>
@@ -100,6 +112,12 @@
     <Compile Include="UserControls\chat.designer.cs">
       <DependentUpon>chat.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\search_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\search_.Designer.cs">
+      <DependentUpon>search_.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,8 +143,14 @@
     <Compile Include="UserControls\Write post.Designer.cs">
       <DependentUpon>Write post.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="comments.resx">
+      <DependentUpon>comments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="posts.resx">
       <DependentUpon>posts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searching.resx">
+      <DependentUpon>searching.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\cover profile photo.resx">
       <DependentUpon>cover profile photo.cs</DependentUpon>
@@ -147,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\chat.resx">
       <DependentUpon>chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\search_.resx">
+      <DependentUpon>search_.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl2.resx">
       <DependentUpon>UserControl2.cs</DependentUpon>
@@ -232,6 +259,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tagmini.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign-Stop-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chat-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.searchbtn = new System.Windows.Forms.Button();
             this.profilepicpanel = new System.Windows.Forms.Panel();
             this.profilebtn = new System.Windows.Forms.Label();
             this.profilepic = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,6 @@
             this.friendsbtn = new System.Windows.Forms.Button();
             this.notificationbtn = new System.Windows.Forms.Button();
             this.messagesbtn = new System.Windows.Forms.Button();
-            this.searchbtn = new System.Windows.Forms.Button();
             this.searchtxt = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -199,13 +199,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.panel2.Controls.Add(this.searchbtn);
             this.panel2.Controls.Add(this.profilepicpanel);
             this.panel2.Controls.Add(this.homebtn);
             this.panel2.Controls.Add(this.settingsbtn);
             this.panel2.Controls.Add(this.friendsbtn);
             this.panel2.Controls.Add(this.notificationbtn);
             this.panel2.Controls.Add(this.messagesbtn);
-            this.panel2.Controls.Add(this.searchbtn);
             this.panel2.Controls.Add(this.searchtxt);
             this.panel2.Controls.Add(this.pictureBox1);
             this.bunifuTransition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
@@ -214,6 +214,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(896, 45);
             this.panel2.TabIndex = 6;
+            // 
+            // searchbtn
+            // 
+            this.searchbtn.BackColor = System.Drawing.Color.White;
+            this.searchbtn.BackgroundImage = global::Facebook.Properties.Resources.search;
+            this.searchbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.searchbtn, BunifuAnimatorNS.DecorationType.None);
+            this.searchbtn.FlatAppearance.BorderSize = 0;
+            this.searchbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchbtn.Location = new System.Drawing.Point(371, 10);
+            this.searchbtn.Name = "searchbtn";
+            this.searchbtn.Size = new System.Drawing.Size(26, 22);
+            this.searchbtn.TabIndex = 8;
+            this.searchbtn.UseVisualStyleBackColor = false;
+            this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click);
             // 
             // profilepicpanel
             // 
@@ -274,22 +290,19 @@
             // 
             // settingsbtn
             // 
-            this.settingsbtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.settingsbtn.BackColor = System.Drawing.Color.Transparent;
+            this.settingsbtn.BackgroundImage = global::Facebook.Properties.Resources.settings1;
             this.settingsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.settingsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.settingsbtn, BunifuAnimatorNS.DecorationType.None);
             this.settingsbtn.FlatAppearance.BorderSize = 0;
             this.settingsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.settingsbtn.ForeColor = System.Drawing.Color.White;
-            this.settingsbtn.Location = new System.Drawing.Point(816, 1);
+            this.settingsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsbtn.Location = new System.Drawing.Point(822, 3);
             this.settingsbtn.Name = "settingsbtn";
-            this.settingsbtn.Size = new System.Drawing.Size(70, 40);
+            this.settingsbtn.Size = new System.Drawing.Size(29, 40);
             this.settingsbtn.TabIndex = 13;
-            this.settingsbtn.Text = "Sign Out";
             this.settingsbtn.UseVisualStyleBackColor = false;
-            this.settingsbtn.Click += new System.EventHandler(this.settingsbtn_Click);
             // 
             // friendsbtn
             // 
@@ -340,29 +353,14 @@
             this.messagesbtn.TabIndex = 10;
             this.messagesbtn.UseVisualStyleBackColor = false;
             // 
-            // searchbtn
-            // 
-            this.searchbtn.BackColor = System.Drawing.Color.White;
-            this.searchbtn.BackgroundImage = global::Facebook.Properties.Resources.search;
-            this.searchbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.searchbtn, BunifuAnimatorNS.DecorationType.None);
-            this.searchbtn.FlatAppearance.BorderSize = 0;
-            this.searchbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchbtn.Location = new System.Drawing.Point(371, 11);
-            this.searchbtn.Name = "searchbtn";
-            this.searchbtn.Size = new System.Drawing.Size(26, 21);
-            this.searchbtn.TabIndex = 8;
-            this.searchbtn.UseVisualStyleBackColor = false;
-            // 
             // searchtxt
             // 
             this.bunifuTransition1.SetDecoration(this.searchtxt, BunifuAnimatorNS.DecorationType.None);
-            this.searchtxt.Font = new System.Drawing.Font("Microsoft NeoGothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchtxt.ForeColor = System.Drawing.Color.Silver;
             this.searchtxt.Location = new System.Drawing.Point(83, 8);
             this.searchtxt.Name = "searchtxt";
-            this.searchtxt.Size = new System.Drawing.Size(317, 27);
+            this.searchtxt.Size = new System.Drawing.Size(317, 24);
             this.searchtxt.TabIndex = 9;
             this.searchtxt.Text = "Search";
             this.searchtxt.Enter += new System.EventHandler(this.searchtxt_Enter_2);

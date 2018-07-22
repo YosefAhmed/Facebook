@@ -39,13 +39,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.userControl11 = new Facebook.UserControl1();
+            this.userControl21 = new Facebook.Resources.UserControl2();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.userControl11 = new Facebook.UserControl1();
-            this.userControl21 = new Facebook.Resources.UserControl2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
@@ -65,6 +65,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(802, 46);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -173,6 +174,33 @@
             this.panel2.Size = new System.Drawing.Size(325, 218);
             this.panel2.TabIndex = 5;
             // 
+            // userControl11
+            // 
+            this.userControl11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.userControl11, BunifuAnimatorNS.DecorationType.None);
+            this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl11.ForeColor = System.Drawing.Color.Black;
+            this.userControl11.Location = new System.Drawing.Point(0, 2);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(5);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(325, 218);
+            this.userControl11.TabIndex = 5;
+            this.userControl11.Visible = false;
+            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.userControl21, BunifuAnimatorNS.DecorationType.None);
+            this.userControl21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl21.Location = new System.Drawing.Point(0, 0);
+            this.userControl21.Margin = new System.Windows.Forms.Padding(5);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(325, 218);
+            this.userControl21.TabIndex = 6;
+            this.userControl21.Visible = false;
+            this.userControl21.Load += new System.EventHandler(this.userControl21_Load_1);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -237,33 +265,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // userControl11
-            // 
-            this.userControl11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.userControl11, BunifuAnimatorNS.DecorationType.None);
-            this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl11.ForeColor = System.Drawing.Color.Black;
-            this.userControl11.Location = new System.Drawing.Point(0, 2);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(5);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(325, 218);
-            this.userControl11.TabIndex = 5;
-            this.userControl11.Visible = false;
-            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.userControl21, BunifuAnimatorNS.DecorationType.None);
-            this.userControl21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl21.Location = new System.Drawing.Point(0, 0);
-            this.userControl21.Margin = new System.Windows.Forms.Padding(5);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(325, 218);
-            this.userControl21.TabIndex = 6;
-            this.userControl21.Visible = false;
-            this.userControl21.Load += new System.EventHandler(this.userControl21_Load_1);
             // 
             // Form1
             // 

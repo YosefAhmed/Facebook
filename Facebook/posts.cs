@@ -18,7 +18,7 @@ namespace Facebook
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
-        int id;
+        public int id;
         public void labeling(string text)
         {
             try
@@ -27,7 +27,7 @@ namespace Facebook
             }
             finally
             {
-                SqlCommand cmd = new SqlCommand("insert into posts (userId,text) values('" + UserControl1.firstName + "','" + text + "')", con);
+                SqlCommand cmd = new SqlCommand("insert into posts (userId,text) values('" + UserControl1.userName + "','" + text + "')", con);
                 cmd.ExecuteNonQuery();
                 SqlCommand cmd2 = new SqlCommand("select MAX(postID) from posts", con);
                 id = (int)cmd2.ExecuteScalar();
@@ -60,7 +60,7 @@ namespace Facebook
             string react = b.Name;
             button1.Text = react;
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into reacts (userName,postID,react) values('" + UserControl1.firstName + "','" + id.ToString() + "','" + react + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into reacts (userName,postID,react) values('" + UserControl1.userName + "','" + id.ToString() + "','" + react + "')", con);
             cmd.ExecuteNonQuery();
             con.Close();
             panel1.Hide();
@@ -96,5 +96,49 @@ namespace Facebook
         {
 
         }
+
+        private void posts_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Add(com(cmnttxt.Text));
+        }
+
+        public Facebook.comments com_upload(string text, int comID, int postID)
+        {
+            Facebook.comments com2 = new Facebook.comments();
+            if (positionYC == 0)
+            {
+                positionYC += cmnttxt.Location.Y + cmnttxt.Size.Width;
+            }
+            com2.id = postID;
+            com2.commentID = comID;
+            com2.Top = positionYC;
+            com2.Left = cmnttxt.Location.X;
+            positionYC += com2.Size.Height + 5;
+            com2.commentlbl_upload(text /*, postID , comID*/);
+            //flowLayoutPanel1.Controls.Add(com2);
+            return com2;
+        }
+
+        int positionYC = 0;
+        public Facebook.comments com(string text)
+        {
+            Facebook.comments com2 = new Facebook.comments();
+            if (positionYC == 0)
+            {
+                positionYC += cmnttxt.Location.Y + cmnttxt.Size.Width;
+            }
+            com2.id = id;
+            com2.Top = positionYC;
+            com2.Left = cmnttxt.Location.X;
+            positionYC += com2.Size.Height + 5;
+            com2.commentlbl(text);
+            return com2;
+        }
+
     }
 }

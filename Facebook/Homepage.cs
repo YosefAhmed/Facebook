@@ -21,7 +21,6 @@ namespace Facebook
         {
             WinAPI.AnimateWindow(this.Handle, 500, WinAPI.BLEND);
             aperancemax();
-            profilebtn.Text = UserControl1.FName;
         }
       
         public void aperancemax()//for maximize 
@@ -54,7 +53,7 @@ namespace Facebook
 
 
 
-        SqlConnection con =new SqlConnection(@"Data Source=DESKTOP-MNGIOHC\SQLEXPRESS;Initial Catalog=FBaccount;Integrated Security=True");
+        SqlConnection con =new SqlConnection(@"Data Source=DESKTOP-99I30T0\SQLEXPRESSS;Initial Catalog=Users_Data;Integrated Security=True");
         //private void postbtn_Click_1(object sender, EventArgs e)
         //{
         //    //  flowLayoutPanel1.Controls.Add(p);
@@ -158,6 +157,14 @@ namespace Facebook
             this.Close();
         }
 
+        private void searchbtn_Click(object sender, EventArgs e)
+        {
+            profilepage.searchfor = searchtxt.Text;
+            searching ss = new searching();
+           
+            ss.Show();
+        }
+
         private void homebtn_Click(object sender, EventArgs e)
         {
             Homepage H = new Homepage();
@@ -168,13 +175,6 @@ namespace Facebook
         {
             Homepage H = new Homepage();
             H.Show();
-            this.Close();
-        }
-
-        private void settingsbtn_Click(object sender, EventArgs e)
-        {
-            Form1 F = new Form1();
-            F.Show();
             this.Close();
         }
     }

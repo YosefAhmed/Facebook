@@ -14,10 +14,8 @@ namespace Facebook
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
         SqlCommand cmd;
 
-
         public String First_name { get; set; }
         public String Second_name { get; set; }
-        public String Full_Name { get; set; }
         public String Username { get; set; }
         public String Password { get; set; }
         public String Gender { get; set; }
@@ -47,7 +45,7 @@ namespace Facebook
         public int Check_account()//checks if the password and username are correct or no 
         {
             string query = "Select * from Reg_DB where UsernameOrEmail='" +Username+ "' and Password='" +Password+ "' ";
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O1FM280\SQLEXPRESS;Initial Catalog=Users_Data;Integrated Security=True");
+           // SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-99I30T0\SQLEXPRESSS;Initial Catalog=Users_Data;Integrated Security=True");
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             con.Close();
@@ -56,77 +54,6 @@ namespace Facebook
             return dt1.Rows.Count;
         }
 
-        public string get_FullName()
-        {
-            try
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("Select First_Name,Second_Name from Reg_DB where UsernameOrEmail='" + UserControl1.firstName + "'", con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                dr.Read();
-                First_name = dr["First_Name"].ToString();
-                Second_name = dr["Second_Name"].ToString();
-                Full_Name = First_name + " " +Second_name;
-                //con.Close();
-                return Full_Name; 
-            }
-            catch (Exception ex)
-            {  MessageBox.Show(ex.Message);
-            return "ERROR";
-            }
 
-        }
-        public string get_FirstName()
-        {
-            try
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("Select First_Name,Second_Name from Reg_DB where UsernameOrEmail='" + UserControl1.firstName + "'", con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                dr.Read();
-                First_name = dr["First_Name"].ToString();
-                Second_name = dr["Second_Name"].ToString();
-                Full_Name = First_name + " " + Second_name;
-                return First_name;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return "ERROR";
-            }
-        }
-
-        
-        //public string get_profileimg()
-        //{
-        //    try
-        //    {
-        //                   con.Open();
-
-        //        // load profile image from database
-
-        //        SqlCommand cmd2 = new SqlCommand("Select profileimg from Reg_DB where UsernameOrEmail='" + UserControl1.firstName + "'", con);
-        //        string dr2 = (string)cmd2.ExecuteScalar();
-
-        //        return dr2 ;
-        //    }
-        //    catch (Exception ex) { MessageBox.Show("You didn't Upload a Profile or a Cover Picture");  return "ERROR";}
-        //    //con.Close();
-        //}
-        //public string get_coverimg()
-        //{
-        //    try
-        //    {
-        //        con.Open();
-        //        // load cover image from database
-        //        SqlCommand cmd3 = new SqlCommand("Select coverimg from Reg_DB where UsernameOrEmail='" + UserControl1.firstName + "'", con);
-        //        string dr3 = (string)cmd3.ExecuteScalar();
-
-        //        return dr3;
-        //    }
-        //    catch (Exception ex) { MessageBox.Show("You didn't Upload a Profile or a Cover Picture");  return "ERROR";}
-        //    //con.Close();
-        //    }
-
-        }
     }
+}

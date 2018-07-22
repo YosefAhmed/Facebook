@@ -129,8 +129,9 @@
             this.username_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username_up.ForeColor = System.Drawing.Color.Silver;
             this.username_up.Location = new System.Drawing.Point(40, 67);
+            this.username_up.Multiline = true;
             this.username_up.Name = "username_up";
-            this.username_up.Size = new System.Drawing.Size(278, 25);
+            this.username_up.Size = new System.Drawing.Size(278, 26);
             this.username_up.TabIndex = 17;
             this.username_up.Text = "Username or Email";
             this.username_up.Enter += new System.EventHandler(this.alphaBlendTextBox1_Enter);
@@ -143,8 +144,9 @@
             this.pass_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pass_up.ForeColor = System.Drawing.Color.Silver;
             this.pass_up.Location = new System.Drawing.Point(40, 101);
+            this.pass_up.Multiline = true;
             this.pass_up.Name = "pass_up";
-            this.pass_up.Size = new System.Drawing.Size(278, 25);
+            this.pass_up.Size = new System.Drawing.Size(278, 26);
             this.pass_up.TabIndex = 18;
             this.pass_up.Text = "New Password";
             this.pass_up.Enter += new System.EventHandler(this.alphaBlendTextBox2_Enter);
@@ -201,8 +203,9 @@
             this.firstname_up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstname_up.ForeColor = System.Drawing.Color.Silver;
             this.firstname_up.Location = new System.Drawing.Point(40, 35);
+            this.firstname_up.Multiline = true;
             this.firstname_up.Name = "firstname_up";
-            this.firstname_up.Size = new System.Drawing.Size(91, 25);
+            this.firstname_up.Size = new System.Drawing.Size(91, 26);
             this.firstname_up.TabIndex = 30;
             this.firstname_up.Text = "First Name";
             this.firstname_up.TextChanged += new System.EventHandler(this.firstname_up_TextChanged);
@@ -413,8 +416,9 @@
             this.secondname_Up.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondname_Up.ForeColor = System.Drawing.Color.Silver;
             this.secondname_Up.Location = new System.Drawing.Point(135, 35);
+            this.secondname_Up.Multiline = true;
             this.secondname_Up.Name = "secondname_Up";
-            this.secondname_Up.Size = new System.Drawing.Size(183, 25);
+            this.secondname_Up.Size = new System.Drawing.Size(183, 26);
             this.secondname_Up.TabIndex = 38;
             this.secondname_Up.Text = "Second Name";
             this.secondname_Up.Enter += new System.EventHandler(this.secondname_Up_Enter);

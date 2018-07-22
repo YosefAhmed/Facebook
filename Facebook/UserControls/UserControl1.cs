@@ -52,8 +52,8 @@ namespace Facebook
             }
         }
 
-        public static string firstName , FName , profileimg , coverimg;
-
+        public static string userName;
+        public static string userNameforfriend;
         private void button1_Click(object sender, EventArgs e)
         {
             Account user=new Account();
@@ -66,11 +66,6 @@ namespace Facebook
             {
 
                 user.Username = user_in.Text.Trim();
-                if (pass_in.Text.Length < 5)
-                {
-                    MessageBox.Show("Password Must Be 5 Charachters At Least ! , Pleas Try Again ", "Invalid Password!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
                 user.Password = pass_in.Text.Trim();
 
                 int count =user.Check_account();
@@ -78,10 +73,8 @@ namespace Facebook
                 if (count == 1)     //if username or email and password are correct (count is the return of "Check_account" method in Account class)
                 {
                     Homepage f2 = new Homepage();
-                    firstName = user_in.Text;
-                    FName = user.get_FirstName();
-            //       profileimg = user.get_profileimg();
-             //       coverimg = user.get_coverimg();
+                    userName = user_in.Text;
+                    userNameforfriend = user_in.Text;
                     f2.Show();
                     ParentForm.Hide();
                 }
